@@ -1,0 +1,2 @@
+1. music recommender system idea; use jaccard similarity: lyrics matching index between songs plus genre
+2. "My Closet": Scan the tags/ clothes itself and add them to your virtual gallery. Virtually try on clothes and mix-and-match without wasting time and effort.

@@ -1,0 +1,2 @@
+1. <mark style="background: #D2B3FFA6;">Symmetry rule</mark>: In a symmetrical distribution **the two sides of the distribution are a mirror image of each other**. A normal distribution is a true symmetric distribution of observed values.
+2. 

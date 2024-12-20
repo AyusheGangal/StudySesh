@@ -1,0 +1,1 @@
+note: Only works when the first two PC account for most of the variations in the data. So if you have a really complicated dataset, PCA does not work well.
