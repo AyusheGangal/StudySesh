@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/StatQuest ML/3. Confusion Matrix.md",
+                "file": "Machine Learning/StatQuest ML/4..md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Confusion Matrix"
+              "title": "4."
             }
           }
         ],
@@ -166,12 +166,15 @@
   },
   "active": "766922aed4b09a5f",
   "lastOpenFiles": [
+    "Machine Learning/StatQuest ML/3. Confusion Matrix.md",
+    "Machine Learning/StatQuest ML/4..md",
+    "Mathematics/FlexBooks Linear Algebra/0. Linear Algebra FlexBooks.md",
+    "Resources/ML resources I used to become a FAANG ML Engineer.md",
     "Machine Learning/StatQuest ML/2. Cross Validation.md",
     "- Topics/tuning.md",
     "Interview Prep/ML Interview Questions.md",
     "Machine Learning/StatQuest ML/1. Introduction to ML.md",
     "Machine Learning/StatQuest ML/0. StatQuest ML playlist.md",
-    "Machine Learning/StatQuest ML/3. Confusion Matrix.md",
     "Screenshots/Screen Shot 2024-12-19 at 23.51.10 PM.png",
     "Screenshots/Screen Shot 2024-12-19 at 23.32.11 PM.png",
     "Screenshots/Screen Shot 2024-12-19 at 23.30.45 PM.png",
@@ -196,12 +199,10 @@
     "- Topics/Test Data.md",
     "Screenshots/Screen Shot 2024-12-19 at 22.07.00 PM.png",
     "- Topics/Training Data.md",
-    "Resources/ML resources I used to become a FAANG ML Engineer.md",
     "Machine Learning/StatQuest ML",
     "Interview Prep/Types of interviews.md",
     "Interview Prep/Top 45 ML interview questions in 2025.md",
     "Interview Prep/SQL Revision.md",
-    "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
     "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/- Attachments",
     "- Topics",
