@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "7dc7f3125f8463ce",
@@ -164,20 +163,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "766922aed4b09a5f",
+  "active": "9ce92164f35a9bf7",
   "lastOpenFiles": [
+    "Screenshots/Screenshot 2022-10-27 at 5.34.16 PM.png",
+    "Screenshots/Screenshot 2022-10-27 at 5.35.44 PM.png",
+    "Screenshots/Screenshot 2022-10-27 at 7.14.21 PM.png",
+    "Screenshots/Screenshot 2022-10-27 at 7.34.02 PM.png",
+    "Screenshots/Screenshot 2022-10-27 at 7.34.55 PM.png",
+    "Screenshots/Screenshot 2022-10-27 at 8.04.53 PM.png",
+    "Screenshots/Screenshot 2022-10-27 at 8.05.32 PM.png",
+    "Screenshots/Screenshot 2022-10-28 at 11.04.14 PM.png",
+    "Screenshots/Screenshot 2022-10-28 at 11.45.58 PM.png",
+    "Screenshots/Screenshot 2022-10-28 at 11.59.24 PM.png",
+    "Screenshots/Screenshot 2022-10-29 at 12.34.18 AM.png",
     "- Topics/ROC.md",
     "Machine Learning/StatQuest ML/6. AUC ROC.md",
-    "Screenshots/Screen Shot 2024-12-22 at 15.39.20 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.35.58 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.33.30 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.27.59 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.24.33 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.22.15 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.07.05 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.05.56 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 15.00.25 PM.png",
-    "Screenshots/Screen Shot 2024-12-22 at 14.56.45 PM.png",
     "Machine Learning/StatQuest ML/0. StatQuest ML playlist.md",
     "Machine Learning/StatQuest ML/5. Bias and Variance.md",
     "- Topics/Regularization.md",
