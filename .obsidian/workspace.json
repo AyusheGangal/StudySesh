@@ -13,17 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/StatQuest ML/4..md",
+                "file": "Machine Learning/StatQuest ML/6. AUC ROC.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4."
+              "title": "6. AUC ROC"
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
@@ -79,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7dc7f3125f8463ce",
@@ -166,43 +166,42 @@
   },
   "active": "766922aed4b09a5f",
   "lastOpenFiles": [
+    "- Topics/ROC.md",
+    "Machine Learning/StatQuest ML/6. AUC ROC.md",
+    "Screenshots/Screen Shot 2024-12-22 at 15.39.20 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.35.58 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.33.30 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.27.59 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.24.33 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.22.15 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.07.05 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.05.56 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 15.00.25 PM.png",
+    "Screenshots/Screen Shot 2024-12-22 at 14.56.45 PM.png",
+    "Machine Learning/StatQuest ML/0. StatQuest ML playlist.md",
+    "Machine Learning/StatQuest ML/5. Bias and Variance.md",
+    "- Topics/Regularization.md",
+    "- Topics/Boosting.md",
+    "- Topics/Bagging.md",
+    "- Topics/Overfitting.md",
+    "- Topics/Variance.md",
+    "- Topics/Bias.md",
+    "Machine Learning/StatQuest ML/4. Sensitivity and Specificity.md",
     "Machine Learning/StatQuest ML/3. Confusion Matrix.md",
-    "Machine Learning/StatQuest ML/4..md",
     "Mathematics/FlexBooks Linear Algebra/0. Linear Algebra FlexBooks.md",
     "Resources/ML resources I used to become a FAANG ML Engineer.md",
     "Machine Learning/StatQuest ML/2. Cross Validation.md",
     "- Topics/tuning.md",
     "Interview Prep/ML Interview Questions.md",
     "Machine Learning/StatQuest ML/1. Introduction to ML.md",
-    "Machine Learning/StatQuest ML/0. StatQuest ML playlist.md",
-    "Screenshots/Screen Shot 2024-12-19 at 23.51.10 PM.png",
-    "Screenshots/Screen Shot 2024-12-19 at 23.32.11 PM.png",
-    "Screenshots/Screen Shot 2024-12-19 at 23.30.45 PM.png",
     "- Topics/AUC.md",
-    "- Topics/ROC.md",
     "- Topics/Specificity.md",
     "- Topics/Sensitivity.md",
-    "Screenshots/Screen Shot 2024-12-19 at 23.23.08 PM.png",
     "- Topics/False Negatives.md",
     "- Topics/False Positives.md",
     "- Topics/True Negatives.md",
     "- Topics/True Positives.md",
-    "- Topics/ground truth.md",
-    "Screenshots/Screen Shot 2024-12-19 at 23.13.47 PM.png",
-    "Screenshots/Screen Shot 2024-12-19 at 23.09.08 PM.png",
-    "Screenshots/Screen Shot 2024-12-19 at 22.41.18 PM.png",
-    "Screenshots/Screen Shot 2024-12-19 at 22.40.00 PM.png",
-    "- Topics/Testing Data.md",
-    "- Topics/Overfitting.md",
-    "- Topics/Bias-Variance Tradeoff.md",
-    "Screenshots/Screen Shot 2024-12-19 at 22.09.29 PM.png",
-    "- Topics/Test Data.md",
-    "Screenshots/Screen Shot 2024-12-19 at 22.07.00 PM.png",
-    "- Topics/Training Data.md",
     "Machine Learning/StatQuest ML",
-    "Interview Prep/Types of interviews.md",
-    "Interview Prep/Top 45 ML interview questions in 2025.md",
-    "Interview Prep/SQL Revision.md",
     "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/- Attachments",
     "- Topics",
