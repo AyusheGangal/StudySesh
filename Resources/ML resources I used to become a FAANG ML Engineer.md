@@ -79,4 +79,4 @@ Blog Link: https://www.trybackprop.com/blog/top_ml_learning_resources
 - Grokking the Machine Learning Interview: https://www.educative.io/courses/grokking-the-machine-learning-interview
 - Grokking Dynamic Programming Interview: https://www.educative.io/courses/grokking-dynamic-programming-interview
 
-[Screen Shot 2024-12-07 at 23.06.52 PM.png]
+Screen Shot 2024-12-07 at 23.06.52 PM.png
