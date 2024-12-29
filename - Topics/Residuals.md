@@ -1,0 +1,1 @@
+The distance from the line (curve fit) to the data point is called a residual.

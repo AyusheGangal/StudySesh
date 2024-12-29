@@ -7,5 +7,7 @@
   },
   "newFileLocation": "folder",
   "newFileFolderPath": "- Topics",
-  "attachmentFolderPath": "Screenshots"
+  "attachmentFolderPath": "Screenshots",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false
 }
