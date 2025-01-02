@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LeetCode/Medium/49. Group Anagrams.md",
+                "file": "Resources/ML resources I used to become a FAANG ML Engineer.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "49. Group Anagrams"
+              "title": "ML resources I used to become a FAANG ML Engineer"
             }
           }
         ]
@@ -166,10 +166,10 @@
   },
   "active": "342e669d0f982869",
   "lastOpenFiles": [
+    "LeetCode/Medium/49. Group Anagrams.md",
     "LeetCode/Medium/347 Top K Frequent Elements.md",
     "Screenshots/Screen Shot 2024-12-29 at 22.05.34 PM.png",
     "Screenshots/Screen Shot 2024-12-29 at 21.43.31 PM.png",
-    "LeetCode/Medium/49. Group Anagrams.md",
     "LeetCode/Easy/Untitled.md",
     "LeetCode/Easy/1. Two Sum.md",
     "LeetCode/Easy/242. Valid Anagram.md",
