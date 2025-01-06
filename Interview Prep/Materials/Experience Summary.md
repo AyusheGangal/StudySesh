@@ -1,3 +1,7 @@
+### New (written 3rd Jan 2025)
+I am currently working as a Software Process Engineer at MathWorks. I have 
+
+________________________________________________________________________
 
 - Hello! My name is Ayushe Gangal. I’ll be graduating with a Master’s in Computer Science (Data Science Concentration) from the University of Massachusetts Amherst at the end of this month.
     
@@ -100,11 +104,7 @@
 		- MayhemNet. In addition to this, the MayhemNet does not require any prior training, thus, significantly reducing the total training time of the complete architecture.
     
 		- The activation functions are randomly allotted to each neuron of the network. In addition to this, the connections between the neurons of two layers are also randomly constructed and the weights are also arbitrarily assigned to each neuron. The possibility of an infinite loop due to the non consecutive layer’s connections is restricted using a variable JUMP that has to be set by the user.
-    
--     
-    
--     
-    
+
 
 <mark style="background: #D2B3FFA6;">Experience with Amazon Sagemaker</mark>
 
