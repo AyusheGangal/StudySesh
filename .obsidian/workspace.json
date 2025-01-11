@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/StatQuest ML/11. Multiple Regression.md",
+                "file": "Machine Learning/StatQuest ML/12. t-tests and ANOVA using Linear Models.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11. Multiple Regression"
+              "title": "12. t-tests and ANOVA using Linear Models"
             }
           }
         ],
@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5,
-    "collapsed": true
+    "width": 322.5
   },
   "right": {
     "id": "7dc7f3125f8463ce",
@@ -183,20 +182,23 @@
   },
   "active": "76b0acc70c52eaf1",
   "lastOpenFiles": [
-    "Screenshots/Screen Shot 2025-01-10 at 22.43.15 PM.png",
-    "Screenshots/Screen Shot 2025-01-10 at 22.21.26 PM.png",
-    "Screenshots/Screen Shot 2025-01-10 at 22.19.59 PM.png",
-    "Machine Learning/StatQuest ML/10. Linear Regression.md",
+    "- Topics/ANOVA.md",
+    "Machine Learning/StatQuest ML/12. t-tests and ANOVA using Linear Models.md",
+    "- Topics/t-test.md",
+    "Screenshots/Screen Shot 2025-01-11 at 00.10.19 AM.png",
+    "Screenshots/Screen Shot 2025-01-11 at 00.08.03 AM.png",
+    "Screenshots/Screen Shot 2025-01-11 at 00.05.54 AM.png",
+    "Screenshots/Screen Shot 2025-01-11 at 00.03.43 AM.png",
+    "Screenshots/Screen Shot 2025-01-11 at 00.01.24 AM.png",
+    "Screenshots/Screen Shot 2025-01-11 at 00.00.30 AM.png",
+    "Screenshots/Screen Shot 2025-01-10 at 23.45.44 PM.png",
+    "Screenshots/Screen Shot 2025-01-10 at 23.42.52 PM.png",
+    "Screenshots/Screen Shot 2025-01-10 at 23.41.24 PM.png",
+    "Screenshots/Screen Shot 2025-01-10 at 23.34.49 PM.png",
+    "- Topics/Design Matrix.md",
     "Machine Learning/StatQuest ML/11. Multiple Regression.md",
+    "Machine Learning/StatQuest ML/10. Linear Regression.md",
     "Resources/ML resources I used to become a FAANG ML Engineer.md",
-    "Screenshots/Screen Shot 2025-01-05 at 22.36.48 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.33.08 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.32.20 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.28.50 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.26.59 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.24.03 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.22.18 PM.png",
-    "Screenshots/Screen Shot 2025-01-05 at 22.16.13 PM.png",
     "Conflict Resolution.md",
     "Interview Prep/Materials/Experience Summary.md",
     "Interview Prep/Top 45 ML interview questions in 2025.md",
@@ -216,9 +218,6 @@
     "LeetCode/Easy/70. Climbing Stairs.md",
     "LeetCode/Easy/27. Remove Element.md",
     "DSA/Data Structures & Algorithms/Priority Queues.md",
-    "DSA/Data Structures & Algorithms/Singly and Doubly Linked Lists.md",
-    "DSA/Data Structures & Algorithms/Introduction.md",
-    "DSA/Data Structures & Algorithms/Home- Data Structures & Algorithms.md",
     "Statistics/StatQuest Stats",
     "Machine Learning/StatQuest ML",
     "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations",
