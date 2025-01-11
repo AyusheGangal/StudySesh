@@ -19,6 +19,9 @@ Blog Link: https://www.trybackprop.com/blog/top_ml_learning_resources
 	- StatQuest Statistics Fundamentals: https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9
 - If time permitting, Probability playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6
 
+### Data Science
+Feature Engineering: http://www.feat.engineering
+
 ### Machine Learning
 - Stanford's "Intro to Machine Learning by Andrew Ng":
 	- Videos: https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU
