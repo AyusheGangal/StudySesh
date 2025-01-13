@@ -18,6 +18,7 @@ Blog Link: https://www.trybackprop.com/blog/top_ml_learning_resources
 - StatQuest: https://www.youtube.com/@statquest/playlists
 	- StatQuest Statistics Fundamentals: https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9
 - If time permitting, Probability playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6
+- Introduction to Statistics Coursera Stanford: https://www.coursera.org/learn/stanford-statistics/home/module/1
 
 ### Data Science
 Feature Engineering: http://www.feat.engineering
@@ -81,5 +82,7 @@ Feature Engineering: http://www.feat.engineering
 - Grokking the Coding Interview Patterns: https://www.educative.io/courses/grokking-coding-interview
 - Grokking the Machine Learning Interview: https://www.educative.io/courses/grokking-the-machine-learning-interview
 - Grokking Dynamic Programming Interview: https://www.educative.io/courses/grokking-dynamic-programming-interview
+
+### Read research papers to stay up to date
 
 ![[Screen Shot 2024-12-07 at 23.06.52 PM.png]]
