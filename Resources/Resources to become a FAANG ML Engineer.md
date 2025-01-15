@@ -1,7 +1,5 @@
 [post link](https://www.reddit.com/r/learnmachinelearning/comments/1e1amzf/list_of_free_educational_ml_resources_i_used_to/)
 
-Blog Link: https://www.trybackprop.com/blog/top_ml_learning_resources
-
 ### Linear Algebra
 - 3Blue1Brown Essence pf Linear Algebra playlist :https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
 - Linear Algebra 101 for AI/ML from the same redditor: 
@@ -9,19 +7,24 @@ Blog Link: https://www.trybackprop.com/blog/top_ml_learning_resources
 	- Part 2: https://www.trybackprop.com/blog/linalg101/part_2_dot_product
 	- Part 3: https://www.trybackprop.com/blog/linalg101/part_3_build_image_search
 - Dr. Valerie Hower: https://www.youtube.com/playlist?list=PLpcwHaLYiaEXW5fLNOlItPH4ATorKjBuc
+- FlexiBooks Linear Algebra: https://flexbooks.ck12.org/user:2d9f79bd12b8/cbook/advanced-mathematics-flexbook/
+- Linear Algebra for Machine Learning and Data Science Coursera: https://www.coursera.org/learn/machine-learning-linear-algebra?specialization=mathematics-for-machine-learning-and-data-science
 
 ### Calculus
 - Khan academy "Multivariate calculus" course (unit 1,2 maybe 3): https://www.khanacademy.org/math/multivariable-calculus
 - Calculus for ML: https://www.youtube.com/watch?v=SmZmBKc7Lrs
+- Calculus for Machine Learning and Data Science Coursera: https://www.coursera.org/learn/machine-learning-calculus?specialization=mathematics-for-machine-learning-and-data-science
 
 ### Statistics & Probability
 - StatQuest: https://www.youtube.com/@statquest/playlists
 	- StatQuest Statistics Fundamentals: https://www.youtube.com/watch?v=qBigTkBLU6g&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9
 - If time permitting, Probability playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6
 - Introduction to Statistics Coursera Stanford: https://www.coursera.org/learn/stanford-statistics/home/module/1
+- Statistics and Probability for Machine Learning and Data Science: https://www.coursera.org/learn/machine-learning-probability-and-statistics?specialization=mathematics-for-machine-learning-and-data-science
 
 ### Data Science
-Feature Engineering: http://www.feat.engineering
+- Feature Engineering: http://www.feat.engineering
+- LeetCode Introduction to Pandas: https://leetcode.com/studyplan/introduction-to-pandas/
 
 ### Machine Learning
 - Stanford's "Intro to Machine Learning by Andrew Ng":
@@ -32,8 +35,12 @@ Feature Engineering: http://www.feat.engineering
 - Andrew Ng's "Structuring Machine Learning Projects" on Coursera: https://www.coursera.org/learn/machine-learning-projects
 - StatQuest Machine Learning playlist: https://www.youtube.com/watch?v=Gv9_4yMHFhI&list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF
 - Machine Learning cheatsheet/glossary: https://ml-cheatsheet.readthedocs.io/en/latest/
+- Machine Learning Systems: https://mlsysbook.ai
+	- Book used for the _tiny machine learning_ course at Harvard University
+- Machine Learning specialization by Andrew Ng Coursera: https://www.coursera.org/specializations/machine-learning-introduction?skipBrowseRedirect=true
 
 ### Deep Learning
+- Vizuara Neural Nets playlist: https://www.youtube.com/playlist?list=PLPTV0NXA_ZSj6tNyn_UadmUeU3Q3oR-hu
 - Andrej Karpathy's "Neural Networks: Zero to Hero": https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
 - Ian Goodfellow's "Deep Learning" book: https://www.deeplearningbook.org/
 - Stanford/Umass Amherst's CS231n/Compsci 682:
@@ -41,10 +48,6 @@ Feature Engineering: http://www.feat.engineering
 	- Lecture notes: https://compsci682-fa20.github.io/notes/
 	- Videos: https://www.youtube.com/watch?v=NfnWJUyUJYU&list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC
 	- Tool to visualize convolutions: https://ezyang.github.io/convolution-visualizer/index.html
-
-### Coursera courses
-- "Mathematics for Machine Learning and Data Science specialization": https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science
-- Machine Learning specialization by Andrew Ng: https://www.coursera.org/specializations/machine-learning-introduction?skipBrowseRedirect=true
 
 ## Transformers and LLMs
 - Transformers: 
