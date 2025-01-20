@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
+                "file": "Machine Learning/LLM Engineer Handbook/Chapter 1/Understanding LLM twin concept and Architecture.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.1 Linear Systems of Equations"
+              "title": "Understanding LLM twin concept and Architecture"
             }
           }
         ],
@@ -197,6 +197,15 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
+    "Machine Learning/LLM Engineer Handbook/Topics.md",
+    "Machine Learning/LLM Engineer Handbook/Preface.md",
+    "Machine Learning/LLM Engineer Handbook/Chapter 1/Understanding LLM twin concept and Architecture.md",
+    "Machine Learning/LLM Engineer Handbook/Chapter 1",
+    "Machine Learning/LLM Engineer Handbook",
+    "Resources/Resources to become a FAANG ML Engineer.md",
+    "Interview Prep/Materials/Experience Summary.md",
+    "Machine Learning/MIsc/Registration.md",
+    "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
     "Mathematics/FlexBooks Linear Algebra/0. Linear Algebra FlexBooks.md",
     "Mathematics/Math for Machine Learning and Data Science/Linear Algebra/Systems of Equations as lines and planes.md",
     "Mathematics/Math for Machine Learning and Data Science/Linear Algebra/System of Sentences.md",
@@ -204,7 +213,6 @@
     "Mathematics/Math for Machine Learning and Data Science/Linear Algebra/Notations.md",
     "Mathematics/Math for Machine Learning and Data Science/Linear Algebra/Linear Algebra Applied I.md",
     "Mathematics/Math for Machine Learning and Data Science/Linear Algebra/index for the course.md",
-    "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.6 Inverse of Higher Dim Matrices.md",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.7 Projections.md",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.5 Cofactor Matrix and Adjoint Matrix.md",
@@ -212,7 +220,6 @@
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.1 Vectors, Length and Direction.md",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.2 Dot and Cross Product.md",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.4 Matrices and Matrix Operations.md",
-    "Resources/Resources to become a FAANG ML Engineer.md",
     "LeetCode/Intro to Pandas/2886. Change data type.md",
     "LeetCode/Intro to Pandas/2884. Modify Columns.md",
     "LeetCode/Intro to Pandas/2885. Rename Columns.md",
@@ -222,15 +229,10 @@
     "Screenshots/Screen Shot 2025-01-11 at 21.22.05 PM.png",
     "LeetCode/Intro to Pandas/2882. Drop duplicate rows.md",
     "Screenshots/Screen Shot 2025-01-11 at 21.17.24 PM.png",
-    "LeetCode/Intro to Pandas/2881. Create new column.md",
     "Screenshots/Screen Shot 2025-01-11 at 21.08.59 PM.png",
-    "LeetCode/Intro to Pandas/2880. Select Data.md",
     "Screenshots/Screen Shot 2025-01-11 at 21.06.23 PM.png",
-    "LeetCode/Intro to Pandas/2879. Display the first 3 rows.md",
     "Screenshots/Screen Shot 2025-01-11 at 20.58.01 PM.png",
-    "LeetCode/Intro to Pandas/2878. Get size of a DataFrame.md",
     "Screenshots/Screen Shot 2025-01-11 at 20.56.07 PM.png",
-    "LeetCode/Intro to Pandas/2877. Create a DataFrame from a list.md",
     "Screenshots/Screen Shot 2025-01-11 at 20.50.43 PM.png",
     "LeetCode/Intro to Pandas",
     "Screenshots/Screen Shot 2025-01-11 at 18.19.18 PM.png",
@@ -240,8 +242,6 @@
     "Machine Learning/StatQuest ML",
     "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/- Attachments",
-    "- Topics",
-    "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices",
-    "Mathematics/FlexBooks Linear Algebra"
+    "- Topics"
   ]
 }

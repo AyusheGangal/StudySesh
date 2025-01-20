@@ -9,8 +9,7 @@ ________________________________________________________________________
     
 - Experience with AWS S3, AWS Redshift, Amazon SageMaker, PySpark, Data bricks
     
-- Profile align more with Data Science Associate (R0036212)
-    
+
 
 <mark style="background: #D2B3FFA6;">Waters Data Engineer</mark>
 
