@@ -14996,6 +14996,31 @@
         "characterCount": 0,
         "nonWhitespaceCharacterCount": 0
       }
+    },
+    "Languages/Python/Libraries/Pandas/loc and iloc.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 538,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 1.7933333333333332,
+      "characterCount": 3483,
+      "nonWhitespaceCharacterCount": 2917,
+      "readingTimeInMinutes": 2.030188679245283,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1737518862069,
+      "modifiedDate": 1737519388412,
+      "sizeInBytes": 3543,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
     }
   }
 }
