@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Python/Libraries/Pandas/Kaggle course/4. Grouping and Sorting.md",
+                "file": "Languages/Python/Libraries/Pandas/Kaggle course/5. Data Types and Missing Values.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Grouping and Sorting"
+              "title": "5. Data Types and Missing Values"
             }
           }
         ],
@@ -197,12 +197,13 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
+    "Languages/Python/Libraries/Pandas/Kaggle course/4. Grouping and Sorting.md",
+    "Languages/Python/Libraries/Pandas/Kaggle course/5. Data Types and Missing Values.md",
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.55.36 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.53.51 PM.png",
     "Languages/Python/Libraries/Pandas/Kaggle course/1. Kaggle Pandas course.md",
-    "Languages/Python/Libraries/Pandas/Kaggle course/4. Grouping and Sorting.md",
     "Languages/Python/Libraries/Pandas/Kaggle course/2. Indexing, Selecting, Assigning.md",
     "Languages/Python/Libraries/Pandas/Kaggle course/3. Summary Function and Maps.md",
     "- Topics/normalize.md",
@@ -237,7 +238,6 @@
     "Screenshots/Screen Shot 2025-01-11 at 21.22.05 PM.png",
     "Screenshots/Screen Shot 2025-01-11 at 21.17.24 PM.png",
     "Screenshots/Screen Shot 2025-01-11 at 21.08.59 PM.png",
-    "Screenshots/Screen Shot 2025-01-11 at 21.06.23 PM.png",
     "LeetCode/Intro to Pandas",
     "Statistics/Introduction to Statistics Coursera/Module 1",
     "Statistics/Introduction to Statistics Coursera",
