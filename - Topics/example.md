@@ -1,0 +1,6 @@
+The values of one row of [**features**](https://developers.google.com/machine-learning/glossary#feature) and possibly a [**label**](https://developers.google.com/machine-learning/glossary#label). Examples in [**supervised learning**](https://developers.google.com/machine-learning/glossary#supervised_machine_learning) fall into two general categories:
+
+- A [**labeled example**](https://developers.google.com/machine-learning/glossary#labeled_example) consists of one or more features and a label. Labeled examples are used during training.
+- An [**unlabeled example**](https://developers.google.com/machine-learning/glossary#unlabeled_example) consists of one or more features but no label. Unlabeled examples are used during inference.
+
+The row of a [**dataset**](https://developers.google.com/machine-learning/glossary#dataset) is typically the raw source for an example. That is, an example typically consists of a subset of the columns in the dataset. Furthermore, the features in an example can also include [[synthetic features]], such as [[feature crosses]].

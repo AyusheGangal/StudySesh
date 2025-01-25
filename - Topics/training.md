@@ -1,0 +1,1 @@
+The process of determining the ideal [[parameters]] (weights and biases) comprising a [[model]]. During training, a system reads in [**examples**](https://developers.google.com/machine-learning/glossary#example) and gradually adjusts parameters. Training uses each example anywhere from a few times to billions of times.

@@ -1,0 +1,3 @@
+In [**supervised machine learning**](https://developers.google.com/machine-learning/glossary#supervised_machine_learning), the "answer" or "result" portion of an [[example]].
+
+Each [**labeled example**](https://developers.google.com/machine-learning/glossary#labeled_example) consists of one or more [**features**](https://developers.google.com/machine-learning/glossary#feature) and a label. For example, in a spam detection dataset, the label would probably be either "spam" or "not spam." In a rainfall dataset, the label might be the amount of rain that fell during a certain period.
