@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Google Intro to ML course/Supervised Learning.md",
+                "file": "Machine Learning/LLM Engineer Handbook/Preface.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Supervised Learning"
+              "title": "Preface"
             }
           }
         ],
@@ -109,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5,
-    "collapsed": true
+    "width": 305.5
   },
   "right": {
     "id": "7dc7f3125f8463ce",
@@ -198,14 +197,14 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
+    "Machine Learning/Google Intro to ML course/What is Machine Learning.md",
+    "Machine Learning/Google Intro to ML course/Supervised Learning.md",
     "- Topics/labels.md",
     "- Topics/example.md",
     "- Topics/feature crosses.md",
     "- Topics/synthetic features.md",
-    "Machine Learning/Google Intro to ML course/Supervised Learning.md",
     "- Topics/features.md",
     "- Topics/model.md",
-    "Machine Learning/Google Intro to ML course/What is Machine Learning.md",
     "Languages/Python/Libraries/Pandas/Kaggle course/6. Renaming and Combining.md",
     "- Topics/predictions.md",
     "- Topics/training.md",
