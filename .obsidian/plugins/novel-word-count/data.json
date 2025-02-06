@@ -15671,6 +15671,31 @@
         "characterCount": 0,
         "nonWhitespaceCharacterCount": 0
       }
+    },
+    "Interview Prep/Materials/ML Basics Questions.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 877,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 2.9233333333333333,
+      "characterCount": 6723,
+      "nonWhitespaceCharacterCount": 5477,
+      "readingTimeInMinutes": 3.309433962264151,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1738816852591,
+      "modifiedDate": 1738816896839,
+      "sizeInBytes": 6756,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
     }
   }
 }
