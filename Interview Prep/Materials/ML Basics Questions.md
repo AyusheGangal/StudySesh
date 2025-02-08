@@ -118,3 +118,90 @@ Several libraries and tools support out-of-core learning, including:
 - Scikit-learn: This popular Python library provides out-of-core learning capabilities with algorithms like SGDClassifier and SGDRegressor.
 - Dask: A flexible parallel computing library that supports out-of-core computations.
 - Vowpal Wabbit (VW): A fast out-of-core learning system for various machine learning tasks
+
+<mark style="background: #ADCCFFA6;"> Define Sampling noise and Sampling bias?</mark>
+It is crucial to use a training set that is representative of the cases you want to generalize to. This is often harder than it sounds: if the sample is too small, you will have sampling noise (i.e., non-representative data as a result of chance), but even very large samples can be non-representative if the sampling method is flawed. This is called sampling bias.
+
+**Sampling Noise** refers to the random variations that occur in a sample due to chance when selecting a subset from a population. It arises because different samples may contain different observations, leading to slight fluctuations in results. This noise decreases as the sample size increases.
+
+**Sampling Bias** occurs when the sample is not representative of the overall population due to a flawed selection process. This leads to systematic errors where certain groups are overrepresented or underrepresented, distorting the conclusions drawn from the data.
+
+In short, sampling noise is due to randomness, while sampling bias is due to a flawed sampling method.
+
+<mark style="background: #ADCCFFA6;">Define Overfitting. How can we prevent it?</mark>
+**Overfitting** in machine learning refers to a model's tendency to learn not only the underlying pattern in the training data but also the noise, idiosyncrasies, and random fluctuations present in the dataset. This results in a model that has high variance—performing exceptionally well on the training set but failing to generalize to unseen data. Mathematically, overfitting occurs when a model minimizes empirical risk (training error) to an extreme degree, at the cost of increasing generalization error.
+
+Formally, given a dataset D and a model f(x;θ), the model is said to overfit if the training loss is significantly lower than the validation loss
+
+A large gap between these losses indicates poor generalization.
+
+**Techniques to Mitigate Overfitting**
+To improve a model's generalization ability, various strategies can be employed:
+1. **Regularization:**
+    - **L1 Regularization (Lasso):** Adds λ∑∣θi∣\lambda \sum |\theta_i| to the loss function, inducing sparsity.
+    - **L2 Regularization (Ridge):** Adds λ∑θi2\lambda \sum \theta_i^2, preventing excessively large weights.
+    - **Elastic Net:** A combination of L1 and L2 regularization.
+    
+2. **Cross-Validation:**
+    - **k-Fold Cross-Validation** reduces variance in performance estimates.
+    - **Leave-One-Out Cross-Validation (LOOCV)** is useful for small datasets.
+    
+3. **Early Stopping:**
+    - Monitors validation loss and halts training when it starts increasing.
+    
+4. **Dropout (for Deep Learning):**
+    - Randomly disables neurons during training to prevent co-adaptation of weights.
+    
+5. **Data Augmentation:**
+    - Artificially expands the dataset (e.g., image transformations, text paraphrasing).
+    
+6. **Reducing Model Complexity:**
+    - Pruning decision trees or reducing the number of hidden layers/nodes.
+    
+7. **Ensemble Methods:**
+    - **Bagging (e.g., Random Forest):** Reduces variance by training multiple models on bootstrapped samples.
+    - **Boosting (e.g., XGBoost):** Combines weak learners iteratively, minimizing bias and variance.
+
+<mark style="background: #ADCCFFA6;">Define Regularization.</mark>
+**Regularization** is a technique in machine learning used to prevent overfitting by adding a penalty to the model's complexity. It helps improve generalization by discouraging the model from learning overly complex patterns that may not generalize well to unseen data.
+
+If you set the regularization hyper parameter to a very large value, you will get an almost flat model (a slope close to zero); the learning algorithm will almost certainly not overfit the training data, but it will be less likely to find a good solution.
+
+**Mathematical Definition**
+Regularization modifies the loss function by adding a regularization term to constrain the model parameters. Given a typical loss function L(θ), regularization introduces a penalty term R(θ), resulting in the new objective function:
+$$L_{reg}(θ)=L(θ)+λR(θ)$$
+where:
+- $L_{reg}(θ)$ is the original loss function (e.g., Mean Squared Error or Cross-Entropy Loss).
+- R(θ) is the regularization term, which penalizes large or unnecessary weights.
+- λ is a hyperparameter that controls the strength of regularization.
+
+**Types of Regularization**
+1. **L1 Regularization (Lasso Regression)**
+    - Uses the **L1 norm**: $R(θ)=∑|θ_i|$
+    - Encourages sparsity by **driving some weights to zero, leading to feature selection**.
+    
+2. **L2 Regularization (Ridge Regression)**
+    - Uses the **L2 norm**: $R(θ)=∑θ^2_{i}$
+    - **Prevents large weight values, making the model more stable.**
+    
+3. **Elastic Net**
+    - A combination of L1 and L2 regularization: $R(θ)=α∑|θ_i|+(1−α)∑θ^2_i$
+    - Useful when both feature selection and weight shrinkage are desired.
+    
+4. **Dropout (Neural Networks)**
+    - Randomly drops a fraction of neurons during training to prevent over-reliance on specific features.
+    
+5. **Early Stopping**
+    - Stops training when validation error starts increasing to prevent overfitting.
+
+
+<mark style="background: #ADCCFFA6;">Differentiate between parameters and hyperparameters.</mark>
+
+| Feature             | **Parameters**                                                                   | **Hyperparameters**                                                               |
+| ------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Definition**      | Internal variables learned by the model from the training data.                  | External configurations set before training to control the learning process.      |
+| **Examples**        | Weights (θ) and biases in neural networks, coefficients in linear regression.    | Learning rate, number of hidden layers, regularization strength, batch size.      |
+| **Learned or Set?** | Learned automatically during training via optimization (e.g., gradient descent). | Set manually or tuned using techniques like grid search or Bayesian optimization. |
+| **Scope**           | Specific to the dataset and changes dynamically during training.                 | Remains fixed during training but can be optimized over multiple runs.            |
+| **Effect**          | Directly affects model predictions.                                              | Controls how the model learns, influencing convergence speed and generalization.  |
+
