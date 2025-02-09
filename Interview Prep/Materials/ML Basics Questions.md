@@ -205,3 +205,38 @@ where:
 | **Scope**           | Specific to the dataset and changes dynamically during training.                 | Remains fixed during training but can be optimized over multiple runs.            |
 | **Effect**          | Directly affects model predictions.                                              | Controls how the model learns, influencing convergence speed and generalization.  |
 
+<mark style="background: #ADCCFFA6;">Define No Free Lunch Theorem.</mark>
+The **No Free Lunch (NFL) Theorem** in machine learning states that no single algorithm performs best for all possible problems. It implies that an algorithm that works well on one type of task may perform poorly on another.
+
+**Formal Understanding**
+For any two learning algorithms A and B, their average performance across all possible problems is the same. This means that without prior knowledge about the specific problem, no one algorithm is inherently superior.
+
+**Implications in Machine Learning**
+- **Algorithm Selection**: There is no universally best model; choosing the right one depends on the problem and data.
+- **Hyperparameter Tuning**: The best settings vary across datasets.
+- **Bias-Variance Tradeoff**: Simpler models generalize better for some tasks, while complex models excel in others.
+
+This theorem highlights the importance of **domain knowledge, feature engineering, and problem-specific experimentation** in ML.
+
+<mark style="background: #ADCCFFA6;">What can go wrong if you tune hyperparameters using test set?</mark>
+Tuning hyperparameters using the **test set** leads to **data leakage** and biased performance estimates. Here’s what can go wrong:
+
+ **1. Overfitting to the Test Set**
+- The model indirectly learns patterns specific to the test set rather than generalizing well to unseen data.
+- Future performance on truly new data may drop significantly.
+
+**2. Invalid Performance Evaluation**
+- The test set should simulate real-world data the model hasn’t seen.
+- Using it for tuning means the final accuracy is optimistic and not a reliable measure of generalization.
+
+ **3. Lack of Generalization**
+- The model may perform well on this particular test set but fail on a different dataset.
+- This is especially dangerous in real-world applications like medical diagnosis or fraud detection.
+
+**Correct Approach: Use a Validation Set**
+Instead of tuning on the test set:
+1. **Split the data into Training, Validation, and Test sets.**
+2. **Use the validation set** to tune hyperparameters.
+3. **Use cross-validation** (e.g., k-fold) for better stability.
+4. **Use the test set only once** for the final unbiased evaluation.
+
