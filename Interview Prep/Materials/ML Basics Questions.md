@@ -240,3 +240,36 @@ Instead of tuning on the test set:
 3. **Use cross-validation** (e.g., k-fold) for better stability.
 4. **Use the test set only once** for the final unbiased evaluation.
 
+
+<mark style="background: #ADCCFFA6;">You are given an imbalanced dataset where the minority class constitutes only **1%** of the total data. You train a highly complex deep learning model, and it achieves **99% accuracy** on the test set.</mark>
+
+<mark style="background: #ADCCFFA6;">1. Why might this accuracy be misleading?</mark>
+<mark style="background: #ADCCFFA6;">2. What alternative evaluation metrics would you use to assess model performance?</mark>
+<mark style="background: #ADCCFFA6;">3. If increasing the dataset size is not an option, how would you improve the model’s ability to correctly classify the minority class?</mark>
+
+**1. Why might this accuracy be misleading?**
+- The dataset is **highly imbalanced** (99:1 class ratio), so a naive model could predict the majority class (99% of the time) and still achieve **99% accuracy** without actually learning anything meaningful.
+- Accuracy is not a good metric for imbalanced datasets because it **doesn’t account for class distribution**.
+
+ **2. What alternative evaluation metrics would you use?**
+Instead of accuracy, better metrics for imbalanced data include:
+- **Precision & Recall:** Precision ensures correctness of positive predictions, while recall measures the model’s ability to find all positive cases.
+- **F1-score:** The harmonic mean of precision and recall, useful when false negatives and false positives are equally important.
+- **AUC-ROC (Area Under Curve - Receiver Operating Characteristic):** Measures how well the model distinguishes between classes.
+- **AUC-PR (Precision-Recall Curve):** More reliable for imbalanced datasets compared to ROC.
+
+ **3. If increasing dataset size is not an option, how would you improve the model’s ability to correctly classify the minority class?**
+Some strategies to handle imbalance:
+- **Resampling Techniques:**
+    - **Oversampling the minority class** (e.g., SMOTE - Synthetic Minority Over-sampling Technique).
+    - **Undersampling the majority class** to balance representation.
+- **Cost-sensitive learning:**
+    - Adjusting class weights in loss function (e.g., `class_weight='balanced'` in Scikit-learn).
+    - Using focal loss to focus on hard-to-classify examples.
+- **Anomaly detection approaches:**
+    - Treat minority cases as anomalies and train models accordingly.
+- **Data Augmentation:**
+    - For images, text, or time-series data, generate synthetic variations.
+- **Ensemble methods:**
+    - Using bagging/boosting (e.g., **Balanced Random Forest, XGBoost with scale_pos_weight**).
+
