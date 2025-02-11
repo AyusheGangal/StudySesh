@@ -273,3 +273,109 @@ Some strategies to handle imbalance:
 - **Ensemble methods:**
     - Using bagging/boosting (e.g., **Balanced Random Forest, XGBoost with scale_pos_weight**).
 
+<mark style="background: #FF5582A6;">HOT Questions</mark>
+<mark style="background: #D2B3FFA6;">1. Bias-Variance Tradeoff in Real-World Models</mark>
+You develop two models for a prediction task:
+- **Model A** is simple (e.g., a linear regression) and has **high training and test error**.
+- **Model B** is a complex deep learning model with **low training error but high test error**.
+**Questions:**
+<mark style="background: #ADCCFFA6;">1. What issue is Model A facing? What about Model B?</mark>
+We have two models:
+- **Model A** is simple and has **high training and test error** → Likely suffering from **high bias (underfitting)**.
+- **Model B** is complex and has **low training error but high test error** → Likely suffering from **high variance (overfitting)**.
+**Model A** faces underfitting because it's too simple to capture the underlying patterns in the data.  **Model B** overfits because it memorizes the training data but fails to generalize.
+
+<mark style="background: #ADCCFFA6;">2. How would you modify Model B to improve its generalization?</mark>
+To improve **Model B's generalization**:
+- Use **regularization** (L1/L2, dropout for deep learning).
+- Increase training data (if possible).
+- Use **cross-validation** to tune complexity.
+- Apply **early stopping** in deep learning models.
+
+<mark style="background: #ADCCFFA6;">3. Suppose you only have a **small dataset**, which model is preferable? Why?</mark>
+If you only have a **small dataset**, **Model A (simpler model)** is preferable because:
+- Complex models need **lots of data** to avoid overfitting.
+- Simpler models are **more interpretable and stable** with limited data.
+
+
+<mark style="background: #D2B3FFA6;">2. Curse of Dimensionality in High-Dimensional Data</mark>
+A dataset has **10,000 features**, but only **100 samples**. You try training a machine learning model, but it performs poorly.
+**Questions:**
+<mark style="background: #ADCCFFA6;">1. Why does high dimensionality hurt model performance in this case?</mark>
+**High dimensionality causes issues** because:
+- **Sparsity**: In high-dimensional space, data points are far apart, making patterns hard to learn.
+- **Overfitting**: With more features than samples, models can perfectly memorize training data but fail to generalize.
+
+<mark style="background: #ADCCFFA6;">2. What techniques can you use to mitigate the curse of dimensionality?</mark>
+**Techniques to mitigate the curse of dimensionality**:
+- **Feature selection** (remove irrelevant or redundant features).
+- **Dimensionality reduction**:
+    - **PCA (Principal Component Analysis)**: Compresses features while retaining variance.
+    - **t-SNE, UMAP**: Useful for visualization.
+- **Regularization** (L1/Lasso regression removes unnecessary features).
+
+<mark style="background: #ADCCFFA6;">3. If you suspect that only a few features are important, how would you identify and retain them?</mark>
+To **identify important features**:
+- Use **feature importance** from models like **Random Forest, XGBoost**.
+- Use **statistical tests** (e.g., mutual information, chi-square test).
+- Perform **recursive feature elimination (RFE)**.
+
+<mark style="background: #D2B3FFA6;"> 3. Handling Concept Drift in a Changing Environment</mark>
+You build a model for predicting customer preferences in an **e-commerce** platform. Over time, user behavior changes, and the model’s performance degrades.
+**Questions:**
+<mark style="background: #ADCCFFA6;">1. What phenomenon is occurring here? How does it impact ML models?</mark>
+Your e-commerce prediction model degrades over time due to **shifting user behavior**. This is **concept drift**, where the relationship between input features and output labels changes over time.
+- **Example**: Customer preferences change, making past data outdated.
+
+<mark style="background: #ADCCFFA6;">2. How can you **detect** and **handle** this issue without retraining the entire model from scratch?</mark>
+**How to detect and handle concept drift**:
+- **Drift detection**:
+    - **Monitor model accuracy over time** (sudden drops indicate drift).
+    - Use **Kolmogorov-Smirnov (KS) test** or **Jensen-Shannon divergence** to compare feature distributions.
+- **Handling drift**:
+    - Periodically **retrain the model** on recent data.
+    - Use **weighted training** (give recent data higher importance).
+    - Use **adaptive models** like online learning algorithms.
+
+<mark style="background: #ADCCFFA6;">3. Would an online learning approach (e.g., incremental learning) be beneficial in this case? Why or why not?</mark>
+**Would online learning help?**
+- **Yes**, online learning can update models incrementally, avoiding the need for full retraining.
+- **Example**: Algorithms like **SGDClassifier, Hoeffding Trees** allow incremental updates.
+
+<mark style="background: #D2B3FFA6;"> 4. Interpretable AI vs. Black Box Models</mark>
+A financial institution uses a **deep learning model** to approve or reject loan applications. The model performs exceptionally well but provides **no explanations** for its decisions.
+
+**Questions:**
+<mark style="background: #ADCCFFA6;">1. Why is model interpretability important in this scenario?</mark>
+A deep learning model is used for **loan approval**, but it’s not explainable. **Why is interpretability important?**
+- **Regulations & Ethics**: In financial decisions, users must understand **why** they were rejected.
+- **Debugging & Trust**: Explainable models **build trust** and help detect biases.
+
+<mark style="background: #ADCCFFA6;">2. How can you make a deep learning model more interpretable?</mark>
+- **Feature importance analysis** (SHAP, LIME).
+- **Attention mechanisms** (for NLP tasks).
+- **Decision rule extraction** (e.g., RuleFit, Tree-based surrogate models).
+
+<mark style="background: #ADCCFFA6;">3. If you were forced to choose between a slightly less accurate but interpretable model (e.g., logistic regression) and a highly accurate but black-box model (e.g., deep learning), which one would you choose? Why?</mark>
+- If **explainability is required (finance, healthcare)** → Choose an **interpretable model** like Logistic Regression or Decision Trees.
+- If **accuracy is the priority (e.g., image recognition)** → Deep learning may be preferable.
+- A **compromise**: Use an ensemble of interpretable and high-performance models.
+
+<mark style="background: #D2B3FFA6;"> 5. Adversarial Attacks in Deep Learning</mark>
+You train a deep learning model for **image classification**. It performs well, but an attacker modifies an image slightly, making the model classify a "panda" as a "gibbon" with high confidence.
+**Questions:**
+<mark style="background: #ADCCFFA6;">1. Why does the model misclassify the slightly modified image?</mark>
+A small perturbation in an image makes the model misclassify it (e.g., "panda" → "gibbon"). 
+- Deep learning models rely on **small pixel-level patterns** rather than holistic features.
+- **Gradient-based attacks** (like FGSM, PGD) exploit this by adding subtle noise that shifts predictions.
+
+<mark style="background: #ADCCFFA6;">2. What strategies can be used to make the model more robust to adversarial attacks?</mark>
+- **Adversarial training**: Train the model on adversarial examples.
+- **Defensive distillation**: Smoothen the model’s decision boundary.
+- **Input preprocessing**:
+    - Use **Gaussian noise, JPEG compression** to remove adversarial perturbations.
+    - **Feature squeezing** (reducing precision of pixel values).
+
+<mark style="background: #ADCCFFA6;">3. Do you think adversarial robustness is important in real-world applications? Why or why not?</mark>
+- **Yes**, especially in security-critical applications (e.g., self-driving cars, facial recognition, medical AI).
+- Ignoring adversarial robustness can lead to serious vulnerabilities in AI systems.
