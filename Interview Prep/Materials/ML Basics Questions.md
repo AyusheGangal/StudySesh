@@ -379,3 +379,25 @@ A small perturbation in an image makes the model misclassify it (e.g., "panda" �
 <mark style="background: #ADCCFFA6;">3. Do you think adversarial robustness is important in real-world applications? Why or why not?</mark>
 - **Yes**, especially in security-critical applications (e.g., self-driving cars, facial recognition, medical AI).
 - Ignoring adversarial robustness can lead to serious vulnerabilities in AI systems.
+
+<mark style="background: #ADCCFFA6;">Define upstream and downstream teams?</mark>
+In a **machine learning** or **software development** workflow, the terms **upstream** and **downstream teams** refer to dependencies in a pipeline or system.
+
+**🔹 Upstream Teams:**
+- Teams that produce **data, models, or services** that your team depends on.
+- They provide **input** to your work.
+- Example:
+    - A **data engineering team** (upstream) processes and provides cleaned datasets for the ML team.
+    - A **research team** (upstream) develops foundational models used by an applied ML team.
+
+ **🔹 Downstream Teams:**
+- Teams that **consume** your outputs.
+- They depend on your work to build or enhance their own.
+- Example:
+    - If you're building an ML model, a **product engineering team** (downstream) might integrate it into an application.
+    - A **business analytics team** (downstream) uses your predictions for decision-making.
+
+In short:
+- **Upstream** teams provide inputs.
+- **Downstream** teams consume your outputs.
+
