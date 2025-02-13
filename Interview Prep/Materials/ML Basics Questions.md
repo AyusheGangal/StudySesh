@@ -401,3 +401,126 @@ In short:
 - **Upstream** teams provide inputs.
 - **Downstream** teams consume your outputs.
 
+<mark style="background: #ADCCFFA6;">How would you select a performance measure in Machine Learning?</mark>
+**Choosing the Right Performance Measure in ML**
+The best performance metric depends on **problem type, data distribution, and business goals**. Here’s how to select one:
+
+ **1️. Regression Problems**
+**Goal:** Predict continuous values.  
+
+| Metric                                | When to Use                                         | Formula                                                                                       |
+| ------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **MSE (Mean Squared Error)**          | Penalizes large errors, sensitive to outliers       | $$\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$                                            |
+| **RMSE (Root Mean Squared Error)**    | Similar to MSE, but interpretable in original units | $$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$                       |
+| **MAE (Mean Absolute Error)**         | Less sensitive to outliers than MSE                 | $$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} \|y_i - \hat{y}_i\|$$                               |
+| **R² (Coefficient of Determination)** | Measures variance explained by the model            | $$R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}$$<br> |
+
+💡 **Selection Tip:**
+- **MSE/RMSE** if large errors are costly (finance, healthcare).
+- **MAE** if outliers shouldn’t have extreme impact.
+- **R²** if you want a percentage measure of variance explained.
+
+ **2️. Classification Problems**
+**Goal:** Assign categories (e.g., spam vs. not spam).  
+
+| Metric                   | When to Use                                      | Formula                                                                                               | Comments                                                               |
+| ------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Accuracy**             | Balanced classes, overall correctness            | $$\text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}$$<br> | Measures overall correctness of the model.                             |
+| **Precision**            | False positives costly (e.g., fraud detection)   | $$\text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}$$<br>                                    | Measures how many predicted positives are actual positives.            |
+| **Recall (Sensitivity)** | False negatives costly (e.g., medical diagnoses) | $$\text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$                                           | Measures how many actual positives are correctly identified.           |
+| **F1-Score**             | Balance between precision & recall               | $$F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$      | Balances **Precision** and **Recall**, useful for imbalanced datasets. |
+| **AUC-ROC**              | Imbalanced classes, ranking importance           | Area under the ROC curve                                                                              |                                                                        |
+
+💡 **Selection Tip:**
+- **Accuracy** if classes are balanced.
+- **Precision** if **false positives** are costly (e.g., fraud detection).
+- **Recall** if **false negatives** are costly (e.g., cancer detection).
+- **F1-Score** if you need a balance between **precision and recall**.
+- **AUC-ROC** if you need a ranking-based evaluation for imbalanced data.
+
+**3️. Clustering Problems**
+**Goal:** Group similar data points.  
+
+| Metric                        | When to Use                              | Formula                                         |
+| ----------------------------- | ---------------------------------------- | ----------------------------------------------- |
+| **Silhouette Score**          | Measures how well clusters are separated | $$S(i) = \frac{b(i) - a(i)}{\max(a(i), b(i))}$$ |
+| **Davies-Bouldin Index**      | Measures intra-cluster similarity        | Lower is better                                 |
+| **Adjusted Rand Index (ARI)** | Compares clustering with ground truth    | Higher is better                                |
+
+💡 **Selection Tip:**
+- **Silhouette Score** if you don’t have true labels.
+- **ARI** if ground truth labels exist.
+- **Davies-Bouldin Index** if you want cluster compactness.
+
+ **Final Selection Guide:**
+✅ **Regression?** → MSE, MAE, RMSE, R²  
+✅ **Balanced Classification?** → Accuracy  
+✅ **Imbalanced Classification?** → Precision, Recall, F1, AUC-ROC  
+✅ **Clustering?** → Silhouette Score, ARI
+
+<mark style="background: #ADCCFFA6;">Distance measure (norms) for these performance measure.</mark>
+In machine learning, **RMSE (Root Mean Squared Error) and MAE (Mean Absolute Error)** are commonly used to measure the distance between two vectors:
+1. The **vector of predictions** $\hat{y}$.
+2. The **vector of target values** $y$.
+
+**Types of Distance Measures (Norms)**
+Different norms can be used to compute distances:
+
+**1️. Euclidean Norm (ℓ₂ Norm) – Used in RMSE**
+- **Formula:** 
+$$\|A \|_2 = \sqrt{\sum_{i=1}^{n} |v_i|^2}$$
+- **Also Called:** ℓ₂ norm.
+- **Description:**
+    - Measures the **straight-line** (Euclidean) distance between two points.
+    - **More sensitive to large errors** (outliers) due to the squaring operation.
+    - Used in **Root Mean Squared Error (RMSE)**.
+
+**2️. Manhattan Norm (ℓ₁ Norm) – Used in MAE**
+- **Formula:** 
+$$\|A \|_1 = \sum_{i=1}^{n} |v_i|$$
+- **Also Called:** ℓ₁ norm, **Manhattan norm**.
+- **Description:**
+    - Measures the distance by summing absolute differences between points.
+    - Called the **Manhattan norm** because it represents movement along **orthogonal city blocks** rather than a straight line.
+    - Used in **Mean Absolute Error (MAE)**.
+    - **Less sensitive to outliers** than RMSE.
+
+ **3️. Generalized ℓₖ Norm (p-Norm)**
+- **Formula:**
+$$\|A \|_k = \left( \sum_{i=1}^{n} |v_i|^k \right)^{\frac{1}{k}}$$
+- **Description:**
+    - A generalized norm where **higher values of kk** put more emphasis on **large values**.
+    - Special cases:
+        - ℓ$_1$ (Manhattan norm) → MAE
+        - ℓ$_2$ (Euclidean norm) → RMSE
+        - ℓ$_∞$ (Maximum norm) → Takes the **largest** absolute value in the vector
+
+**4️. Special Cases: ℓ₀ and ℓ∞ Norms**
+
+| Norm        | Formula                              | Interpretation                                                                             | Use Case                                                                                                                                                                                   |                                                                                                                                                     |
+| ----------- | ------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ℓ₀ Norm** | ∥A∥ number of non-zero elements in A | **Cardinality norm** (number of nonzero elements). Often used in **sparsity constraints**. |                                                                                                                                                                                            |                                                                                                                                                     |
+| **ℓ∞ Norm** | $$A \|_{\infty} = \max_i \|v_i\|$$   | The **ℓ∞ norm** measures the **largest single deviation** from zero in the vector.         | **SVMs** with a **max-margin classifier** often use **ℓ∞ norm** to ensure that the **maximum margin** between classes is as wide as possible, focusing on the most "marginal" data points. | Often used in **optimization** problems that focus on **worst-case** scenarios, where you want to minimize the largest possible error or deviation. |
+
+ **RMSE vs. MAE: Sensitivity to Outliers**
+- **RMSE (ℓ₂ norm)**: More sensitive to **outliers**, because squaring errors magnifies large deviations.
+- **MAE (ℓ₁ norm)**: More **robust to outliers**, treating all errors equally.
+
+✅ **When to Use RMSE?**
+- If **outliers are rare and normally distributed** (e.g., Gaussian noise).
+- When **large errors should be penalized more**.
+- Common in **regression tasks**.
+
+✅ **When to Use MAE?**
+- If the dataset contains **many outliers** or noise.
+- When **all errors should contribute equally**.
+- Suitable for **robust modeling** (e.g., median-based loss).
+
+ **Summary Table**
+
+| Norm                      | Formula                   | Usage                                   | Sensitivity to Outliers            |
+| ------------------------- | ------------------------- | --------------------------------------- | ---------------------------------- |
+| **ℓ₁ (Manhattan Norm)**   |                           | v_i                                     | )                                  |
+| **ℓ₂ (Euclidean Norm)**   |                           | RMSE                                    | High (Penalizes large errors more) |
+| **ℓ₀ (Cardinality Norm)** | Count of nonzero elements | Feature selection, sparsity constraints | N/A                                |
+| **ℓ∞ (Max Norm)**         |                           | v_i                                     | )                                  |
