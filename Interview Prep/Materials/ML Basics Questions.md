@@ -1,5 +1,5 @@
 
-<mark style="background: #ADCCFFA6;">What are the benefits of Machine Learning?</mark>
+<mark style="background: #ADCCFFA6;">1. What are the benefits of Machine Learning?</mark>
 To summarize, Machine Learning is great for:
 - Problems for which existing solutions require a lot of hand-tuning or long lists of rules: one Machine Learning algorithm can often simplify code and perform better.
 - Complex problems for which there is no good solution at all using a traditional approach: the best Machine Learning techniques can find a solution.
@@ -7,7 +7,7 @@ To summarize, Machine Learning is great for:
 - Getting insights about complex problems and large amounts of data.
 
 
-<mark style="background: #ADCCFFA6;">Define feature engineering vs feature extraction</mark>
+<mark style="background: #ADCCFFA6;">2. Define feature engineering vs feature extraction</mark>
 Both feature engineering and feature extraction are techniques used to improve model performance by creating meaningful input features, but they differ in how they achieve this.
 
 **Feature Engineering**
@@ -52,8 +52,8 @@ When to Use What?
 - Use Feature Engineering when working with structured/tabular data, where domain knowledge can create meaningful features.
 - Use Feature Extraction when dealing with high-dimensional data (e.g., images, text) where you need automated transformation methods.
 
-  
-<mark style="background: #ADCCFFA6;">Define Types of Machine Learning based on:</mark>
+
+<mark style="background: #ADCCFFA6;">3. Define Types of Machine Learning based on:</mark>
 Based on Human Supervision:
 - Supervised Learning: 
 	- The algorithm learns from a labeled dataset, which includes input features and corresponding desired outputs (targets or labels).
@@ -97,7 +97,7 @@ Based on Learning Approach:
 	- Linear Regression, Logistic Regression, and Decision Trees are examples. Think of it like a student understanding the underlying concepts of a subject and using that knowledge to solve new problems.
 
 
-<mark style="background: #ADCCFFA6;">Define Out-of-core learning.</mark>
+<mark style="background: #ADCCFFA6;">4. Define Out-of-core learning.</mark>
 **Out-of-core learning** is a technique in machine learning that allows you to work with datasets that are too large to fit into your computer's main memory (RAM).
 
 Here's how it works:
@@ -119,7 +119,7 @@ Several libraries and tools support out-of-core learning, including:
 - Dask: A flexible parallel computing library that supports out-of-core computations.
 - Vowpal Wabbit (VW): A fast out-of-core learning system for various machine learning tasks
 
-<mark style="background: #ADCCFFA6;"> Define Sampling noise and Sampling bias?</mark>
+<mark style="background: #ADCCFFA6;"> 5. Define Sampling noise and Sampling bias?</mark>
 It is crucial to use a training set that is representative of the cases you want to generalize to. This is often harder than it sounds: if the sample is too small, you will have sampling noise (i.e., non-representative data as a result of chance), but even very large samples can be non-representative if the sampling method is flawed. This is called sampling bias.
 
 **Sampling Noise** refers to the random variations that occur in a sample due to chance when selecting a subset from a population. It arises because different samples may contain different observations, leading to slight fluctuations in results. This noise decreases as the sample size increases.
@@ -128,7 +128,7 @@ It is crucial to use a training set that is representative of the cases you want
 
 In short, sampling noise is due to randomness, while sampling bias is due to a flawed sampling method.
 
-<mark style="background: #ADCCFFA6;">Define Overfitting. How can we prevent it?</mark>
+<mark style="background: #ADCCFFA6;">6. Define Overfitting. How can we prevent it?</mark>
 **Overfitting** in machine learning refers to a model's tendency to learn not only the underlying pattern in the training data but also the noise, idiosyncrasies, and random fluctuations present in the dataset. This results in a model that has high variance—performing exceptionally well on the training set but failing to generalize to unseen data. Mathematically, overfitting occurs when a model minimizes empirical risk (training error) to an extreme degree, at the cost of increasing generalization error.
 
 Formally, given a dataset D and a model f(x;θ), the model is said to overfit if the training loss is significantly lower than the validation loss
@@ -162,7 +162,7 @@ To improve a model's generalization ability, various strategies can be employed:
     - **Bagging (e.g., Random Forest):** Reduces variance by training multiple models on bootstrapped samples.
     - **Boosting (e.g., XGBoost):** Combines weak learners iteratively, minimizing bias and variance.
 
-<mark style="background: #ADCCFFA6;">Define Regularization.</mark>
+<mark style="background: #ADCCFFA6;">7. Define Regularization.</mark>
 **Regularization** is a technique in machine learning used to prevent overfitting by adding a penalty to the model's complexity. It helps improve generalization by discouraging the model from learning overly complex patterns that may not generalize well to unseen data.
 
 If you set the regularization hyper parameter to a very large value, you will get an almost flat model (a slope close to zero); the learning algorithm will almost certainly not overfit the training data, but it will be less likely to find a good solution.
@@ -195,7 +195,7 @@ where:
     - Stops training when validation error starts increasing to prevent overfitting.
 
 
-<mark style="background: #ADCCFFA6;">Differentiate between parameters and hyperparameters.</mark>
+<mark style="background: #ADCCFFA6;">8. Differentiate between parameters and hyperparameters.</mark>
 
 | Feature             | **Parameters**                                                                   | **Hyperparameters**                                                               |
 | ------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -205,7 +205,7 @@ where:
 | **Scope**           | Specific to the dataset and changes dynamically during training.                 | Remains fixed during training but can be optimized over multiple runs.            |
 | **Effect**          | Directly affects model predictions.                                              | Controls how the model learns, influencing convergence speed and generalization.  |
 
-<mark style="background: #ADCCFFA6;">Define No Free Lunch Theorem.</mark>
+<mark style="background: #ADCCFFA6;">9. Define No Free Lunch Theorem.</mark>
 The **No Free Lunch (NFL) Theorem** in machine learning states that no single algorithm performs best for all possible problems. It implies that an algorithm that works well on one type of task may perform poorly on another.
 
 **Formal Understanding**
@@ -218,7 +218,7 @@ For any two learning algorithms A and B, their average performance across all po
 
 This theorem highlights the importance of **domain knowledge, feature engineering, and problem-specific experimentation** in ML.
 
-<mark style="background: #ADCCFFA6;">What can go wrong if you tune hyperparameters using test set?</mark>
+<mark style="background: #ADCCFFA6;">10. What can go wrong if you tune hyperparameters using test set?</mark>
 Tuning hyperparameters using the **test set** leads to **data leakage** and biased performance estimates. Here’s what can go wrong:
 
  **1. Overfitting to the Test Set**
@@ -241,7 +241,7 @@ Instead of tuning on the test set:
 4. **Use the test set only once** for the final unbiased evaluation.
 
 
-<mark style="background: #ADCCFFA6;">You are given an imbalanced dataset where the minority class constitutes only **1%** of the total data. You train a highly complex deep learning model, and it achieves **99% accuracy** on the test set.</mark>
+<mark style="background: #ADCCFFA6;">11. You are given an imbalanced dataset where the minority class constitutes only **1%** of the total data. You train a highly complex deep learning model, and it achieves **99% accuracy** on the test set.</mark>
 
 <mark style="background: #ADCCFFA6;">1. Why might this accuracy be misleading?</mark>
 <mark style="background: #ADCCFFA6;">2. What alternative evaluation metrics would you use to assess model performance?</mark>
@@ -380,7 +380,7 @@ A small perturbation in an image makes the model misclassify it (e.g., "panda" �
 - **Yes**, especially in security-critical applications (e.g., self-driving cars, facial recognition, medical AI).
 - Ignoring adversarial robustness can lead to serious vulnerabilities in AI systems.
 
-<mark style="background: #ADCCFFA6;">Define upstream and downstream teams?</mark>
+<mark style="background: #ADCCFFA6;">12. Define upstream and downstream teams?</mark>
 In a **machine learning** or **software development** workflow, the terms **upstream** and **downstream teams** refer to dependencies in a pipeline or system.
 
 **🔹 Upstream Teams:**
@@ -401,7 +401,7 @@ In short:
 - **Upstream** teams provide inputs.
 - **Downstream** teams consume your outputs.
 
-<mark style="background: #ADCCFFA6;">How would you select a performance measure in Machine Learning?</mark>
+<mark style="background: #ADCCFFA6;">13. How would you select a performance measure in Machine Learning?</mark>
 **Choosing the Right Performance Measure in ML**
 The best performance metric depends on **problem type, data distribution, and business goals**. Here’s how to select one:
 
@@ -458,7 +458,7 @@ The best performance metric depends on **problem type, data distribution, and bu
 ✅ **Imbalanced Classification?** → Precision, Recall, F1, AUC-ROC  
 ✅ **Clustering?** → Silhouette Score, ARI
 
-<mark style="background: #ADCCFFA6;">Distance measure (norms) for these performance measure.</mark>
+<mark style="background: #ADCCFFA6;">14. Distance measure (norms) for these performance measure.</mark>
 In machine learning, **RMSE (Root Mean Squared Error) and MAE (Mean Absolute Error)** are commonly used to measure the distance between two vectors:
 1. The **vector of predictions** $\hat{y}$.
 2. The **vector of target values** $y$.
@@ -497,10 +497,10 @@ $$\|A \|_k = \left( \sum_{i=1}^{n} |v_i|^k \right)^{\frac{1}{k}}$$
 
 **4️. Special Cases: ℓ₀ and ℓ∞ Norms**
 
-| Norm        | Formula                              | Interpretation                                                                             | Use Case                                                                                                                                                                                   |                                                                                                                                                     |
-| ----------- | ------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **ℓ₀ Norm** | ∥A∥ number of non-zero elements in A | **Cardinality norm** (number of nonzero elements). Often used in **sparsity constraints**. |                                                                                                                                                                                            |                                                                                                                                                     |
-| **ℓ∞ Norm** | $$A \|_{\infty} = \max_i \|v_i\|$$   | The **ℓ∞ norm** measures the **largest single deviation** from zero in the vector.         | **SVMs** with a **max-margin classifier** often use **ℓ∞ norm** to ensure that the **maximum margin** between classes is as wide as possible, focusing on the most "marginal" data points. | Often used in **optimization** problems that focus on **worst-case** scenarios, where you want to minimize the largest possible error or deviation. |
+| Norm        | Formula                              | Interpretation                                                                             | Use Case                                                                                                                                                                                   |
+| ----------- | ------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **ℓ₀ Norm** | ∥A∥ number of non-zero elements in A | **Cardinality norm** (number of nonzero elements). Often used in **sparsity constraints**. |                                                                                                                                                                                            |
+| **ℓ∞ Norm** | $$\|A\|_{\infty} = \max_i \|v_i\|$$  | The **ℓ∞ norm** measures the **largest single deviation** from zero in the vector.         | **SVMs** with a **max-margin classifier** often use **ℓ∞ norm** to ensure that the **maximum margin** between classes is as wide as possible, focusing on the most "marginal" data points. |
 
  **RMSE vs. MAE: Sensitivity to Outliers**
 - **RMSE (ℓ₂ norm)**: More sensitive to **outliers**, because squaring errors magnifies large deviations.
@@ -516,11 +516,59 @@ $$\|A \|_k = \left( \sum_{i=1}^{n} |v_i|^k \right)^{\frac{1}{k}}$$
 - When **all errors should contribute equally**.
 - Suitable for **robust modeling** (e.g., median-based loss).
 
- **Summary Table**
+<mark style="background: #ADCCFFA6;">15. What is the interpretation of ℓ∞ Norm?</mark>
+The **ℓ∞ norm** is often referred to as the **maximum norm**, and it is the maximum **absolute value** of the elements in a vector.
 
-| Norm                      | Formula                   | Usage                                   | Sensitivity to Outliers            |
-| ------------------------- | ------------------------- | --------------------------------------- | ---------------------------------- |
-| **ℓ₁ (Manhattan Norm)**   |                           | v_i                                     | )                                  |
-| **ℓ₂ (Euclidean Norm)**   |                           | RMSE                                    | High (Penalizes large errors more) |
-| **ℓ₀ (Cardinality Norm)** | Count of nonzero elements | Feature selection, sparsity constraints | N/A                                |
-| **ℓ∞ (Max Norm)**         |                           | v_i                                     | )                                  |
+**Mathematical Definition:**
+$$\|A\|_{\infty} = \max_i |v_i|$$
+where:
+- $A=[v_1,v_2,...,v_n]$ is the vector of values.
+- $\max_i$​ selects the **largest absolute value** among the vector elements.
+
+**Interpretation:**
+- The **ℓ∞ norm** measures the **largest single deviation** from zero in the vector.
+- It is often used in **optimization** problems that focus on **worst-case** scenarios, where you want to minimize the largest possible error or deviation.
+
+**Key Points:**
+- It focuses on the **most significant** or **largest error** in a vector, completely ignoring the other values.
+- **In ML**, it’s useful for **robust optimization** where the largest error is critical to minimize.
+
+**Example Usage:**
+- **SVMs** with a **max-margin classifier** often use **ℓ∞ norm** to ensure that the **maximum margin** between classes is as wide as possible, focusing on the most "marginal" data points.
+
+<mark style="background: #ADCCFFA6;">16. What is the interpretation of ℓ₀ Norm?</mark>
+The **ℓ₀ norm** measures the number of **nonzero elements** in a vector. It does **not** consider the magnitude of the values, only whether they are zero or not.
+
+**Mathematical Definition:**
+∥A∥ = number of non-zero elements in A
+
+where:
+- $A = [v_1, v_2, ..., v_n]$ is the vector.
+- The norm counts how many elements in $A$ are **not equal to zero**.
+
+**Interpretation & Key Insights**
+- **ℓ₀ norm does not follow standard norm properties** because it isn’t continuous or differentiable.
+- It is used to measure **sparsity**—how many elements in a dataset, feature vector, or model weights are nonzero.
+- The higher the ℓ₀ norm, the **less sparse** the vector (i.e., more nonzero values).
+- The lower the ℓ₀ norm, the **sparser** the vector (i.e., more zeros).
+
+**Applications in Machine Learning**
+1. **Feature Selection:**
+    - ℓ₀ norm is used to find the **minimum number of features** needed to make accurate predictions.
+    - In **compressed sensing** and **sparse modeling**, minimizing ℓ₀ helps select the most important features.
+2. **Sparsity-Inducing Regularization:**
+    - **LASSO (L1 Regularization) approximates ℓ₀** to encourage feature selection in models.
+    - Direct ℓ₀ minimization is **NP-hard** (computationally expensive), so it’s often approximated using ℓ₁ norm.
+3. **Neural Networks & Pruning:**
+    - Used to remove unnecessary neurons or weights to reduce model size.
+
+**Example**
+ **Vector:**
+A=[3,0,5,0,0,−2], 
+∥A∥$_0$=3
+(since there are three nonzero elements: 3,5,−2)
+$\| A \|_0 = 3 \quad$
+
+✅ **High ℓ₀ norm → Less sparse (more nonzero values).**  
+✅ **Low ℓ₀ norm → More sparse (fewer nonzero values).**
+
