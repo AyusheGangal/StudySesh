@@ -572,3 +572,6 @@ $\| A \|_0 = 3 \quad$
 ✅ **High ℓ₀ norm → Less sparse (more nonzero values).**  
 ✅ **Low ℓ₀ norm → More sparse (fewer nonzero values).**
 
+<mark style="background: #ADCCFFA6;">Talk about Linear Regression in detail.</mark>
+Refer to [[Linear Regression]]
+
