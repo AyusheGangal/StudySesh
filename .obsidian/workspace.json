@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -210,10 +210,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7cf514940805ab3",
+  "active": "f053e7f0a0bdbb02",
   "lastOpenFiles": [
-    "Interview Prep/ML Basics Questions.md",
+    "Screenshots/Screenshot 2025-02-16 at 10.03.28 PM.png",
     "Machine Learning/Algorithms/Linear Regression.md",
+    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/LLM Engineer Handbook/Preface.md",
     "Interview Prep/ML Interview Questions.md",
     "Machine Learning/Algorithms",
@@ -245,7 +246,6 @@
     "Languages/Python/Libraries/Pandas/Kaggle course/1. Kaggle Pandas course.md",
     "Languages/Python/Libraries/Pandas/Kaggle course/2. Indexing, Selecting, Assigning.md",
     "Languages/Python/Libraries/Pandas/Kaggle course/3. Summary Function and Maps.md",
-    "- Topics/normalize.md",
     "Languages/Python/Libraries/Pandas/Kaggle course",
     "Screenshots/Screenshot 2025-01-21 at 11.53.58 PM.png",
     "Languages/Python/Libraries/Pandas",

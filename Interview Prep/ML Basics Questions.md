@@ -572,6 +572,75 @@ $\| A \|_0 = 3 \quad$
 ✅ **High ℓ₀ norm → Less sparse (more nonzero values).**  
 ✅ **Low ℓ₀ norm → More sparse (fewer nonzero values).**
 
-<mark style="background: #ADCCFFA6;">Talk about Linear Regression in detail.</mark>
+<mark style="background: #ADCCFFA6;">17. Talk about Linear Regression in detail.</mark>
 Refer to [[Linear Regression]]
+
+<mark style="background: #ADCCFFA6;">18. What is gradient descent? Why do we need it?</mark>
+ Gradient Descent is an **optimization algorithm** used to **minimize a loss function** by iteratively updating the model’s parameters in the direction of the steepest descent. It is widely used in machine learning, especially in training models like **Linear Regression, Logistic Regression, and Neural Networks**.
+ 
+In **Linear Regression**, we aim to find the optimal values of w (weights) and b (bias) that minimize the **Mean Squared Error (MSE)**:
+$$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$The best parameters $w$ and $b$ minimize this function. Instead of solving it directly using the **Normal Equation**, which is computationally expensive for large datasets, we use **Gradient Descent**, which iteratively improves the model parameters.
+
+Gradient Descent updates the model parameters **in the direction of the steepest decrease** in the loss function. This is done using the **gradient (partial derivative)** of the loss function with respect to each parameter.
+
+The **learning rate** refers to how much the parameters are changed at each iteration. If the learning rate is too high, the model fails to converge and jumps from good to bad cost optimizations. If the learning rate is too low, the model will take too long to converge to the minimum error.
+
+**Computing the Gradient for Linear Regression**
+For **Simple Linear Regression** ($y=wx+b$), we compute the **gradients**:
+
+**1. Partial Derivative w.r.t $w$ (Weight Update Rule):**
+$$\frac{\partial MSE}{\partial w} = -\frac{2}{m} \sum_{i=1}^{m} x_i (y_i - \hat{y}_i)$$
+
+**2. Partial Derivative w.r.t $b$ (Bias Update Rule):**
+$$\frac{\partial MSE}{\partial b} = -\frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)
+$$
+
+These derivatives tell us **how much to adjust $w$ and $b$ to reduce the error**.
+
+**Gradient Descent Update Rule**
+We update the parameters $w$ and $b$ using the **learning rate α**:
+$$w:=w−α\frac{∂MSE}{∂w}$$
+
+where:
+- α = **learning rate**, which controls the step size in each update.
+
+The **learning rate** refers to how much the parameters are changed at each iteration. If the learning rate is too high, the model fails to converge and jumps from good to bad cost optimizations. If the learning rate is too low, the model will take too long to converge to the minimum error.
+
+The choice of α (learning rate) significantly affects the optimization process:
+✅ **Too Small α → Convergence is slow**.  
+❌ **Too Large α→ Can overshoot or even diverge**.  
+✅ **Optimal α → Finds the minimum efficiently.
+
+📌 **Solution:** Use techniques like **learning rate decay** or **adaptive optimizers** (e.g., Adam, RMSprop).
+
+![[Screenshot 2025-02-16 at 10.03.28 PM.png|500]]
+<mark style="background: #ADCCFFA6;">19. What are the stopping criteria for gradient descent?</mark>
+1. **Loss Change is Small** → If $| L_{t} - L_{t-1} | < \epsilon$, stop.
+2. **Gradient is Close to Zero** → If $\nabla L \approx 0$, we are near a minimum.
+3. **Max Iterations Reached** → A predefined limit is hit.
+
+
+<mark style="background: #ADCCFFA6;">20. Derive the update formula for MSE (gradient descent formula)</mark>
+
+
+21. 
+
+<mark style="background: #ADCCFFA6;">22. Compare gradient descent and normal equation. (when to use which?)</mark>
+
+| **Method**           | **Computational Cost**      | **Suitable for Large Data?**  | **Requires Learning Rate?** |
+| -------------------- | --------------------------- | ----------------------------- | --------------------------- |
+| **Gradient Descent** | $O(mn)$ per iteration       | ✅ Yes                         | ✅ Yes                       |
+| **Normal Equation**  | $O(n^3)$ (Matrix Inversion) | ❌ No (expensive for high nnn) | ❌ No                        |
+
+For **small datasets**, the **Normal Equation** is fine.  
+For **large datasets**, **Gradient Descent** is preferred!
+
+<mark style="background: #ADCCFFA6;">23. What are the types of gradient descent?</mark>
+
+| **Type**                              | **Description**                                          | **Pros**                                 | **Cons**                   |
+| ------------------------------------- | -------------------------------------------------------- | ---------------------------------------- | -------------------------- |
+| **Batch Gradient Descent**            | Computes gradient using **entire dataset**               | Stable convergence                       | Slow for large datasets    |
+| **Stochastic Gradient Descent (SGD)** | Computes gradient using **one random sample per update** | Faster updates, good for online learning | High variance in updates   |
+| **Mini-Batch Gradient Descent**       | Uses a **small batch of samples** per update             | Balance between stability and speed      | Needs tuning of batch size |
+✅ **Mini-batch GD** is the most commonly used variant!
 

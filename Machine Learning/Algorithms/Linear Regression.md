@@ -73,10 +73,10 @@ The error between predictions and actual values is measured using the **Mean Squ
 **Step 3: Optimization Using Gradient Descent**
 To find the optimal values of w and b, we use **Gradient Descent**, an iterative optimization algorithm.
 #### **1. Compute Gradients (Partial Derivatives of MSE)**
-**Gradient w.r.t www:**
+**Gradient w.r.t $w$:**
 $$\frac{\partial MSE}{\partial w} = -\frac{2}{m} \sum_{i=1}^{m} x_i (y_i - \hat{y}_i)$$
 
-**Gradient w.r.t bbb:**
+**Gradient w.r.t $b$:**
 $$\frac{\partial MSE}{\partial b} = -\frac{2}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)
 $$
 
@@ -111,4 +111,3 @@ $$MSE+ \lambda \sum |w|$$
 
 ✅ **Ridge → Shrinks weights but keeps all features.**  
 ✅ **Lasso → Selects the most important features.**
-
