@@ -612,7 +612,6 @@ The choice of α (learning rate) significantly affects the optimization process:
 ✅ **Optimal α → Finds the minimum efficiently.
 
 📌 **Solution:** Use techniques like **learning rate decay** or **adaptive optimizers** (e.g., Adam, RMSprop).
-
 ![[Screenshot 2025-02-16 at 10.03.28 PM.png|500]]
 <mark style="background: #ADCCFFA6;">19. What are the stopping criteria for gradient descent?</mark>
 1. **Loss Change is Small** → If $| L_{t} - L_{t-1} | < \epsilon$, stop.
@@ -623,7 +622,10 @@ The choice of α (learning rate) significantly affects the optimization process:
 <mark style="background: #ADCCFFA6;">20. Derive the update formula for MSE (gradient descent formula)</mark>
 
 
-21. 
+
+<mark style="background: #ADCCFFA6;">21. Manually calculate gradient descent for this example: x = [1, 2, 3]; y = [2, 2.8, 3.6]</mark>
+
+
 
 <mark style="background: #ADCCFFA6;">22. Compare gradient descent and normal equation. (when to use which?)</mark>
 
@@ -643,4 +645,5 @@ For **large datasets**, **Gradient Descent** is preferred!
 | **Stochastic Gradient Descent (SGD)** | Computes gradient using **one random sample per update** | Faster updates, good for online learning | High variance in updates   |
 | **Mini-Batch Gradient Descent**       | Uses a **small batch of samples** per update             | Balance between stability and speed      | Needs tuning of batch size |
 ✅ **Mini-batch GD** is the most commonly used variant!
+
 
