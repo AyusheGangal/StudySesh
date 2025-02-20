@@ -644,4 +644,6 @@ For **large datasets**, **Gradient Descent** is preferred!
 | **Batch Gradient Descent**            | Computes gradient using **entire dataset**               | Stable convergence                       | Slow for large datasets    |
 | **Stochastic Gradient Descent (SGD)** | Computes gradient using **one random sample per update** | Faster updates, good for online learning | High variance in updates   |
 | **Mini-Batch Gradient Descent**       | Uses a **small batch of samples** per update             | Balance between stability and speed      | Needs tuning of batch size |
-✅ **Mini-batch GD** is the most commonly used variant!
+✅ **Mini-batch GD** is the most commonly used variant
+
+
