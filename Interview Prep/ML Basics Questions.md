@@ -647,3 +647,4 @@ For **large datasets**, **Gradient Descent** is preferred!
 ✅ **Mini-batch GD** is the most commonly used variant
 
 
+
