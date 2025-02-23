@@ -9,5 +9,6 @@
   "newFileFolderPath": "- Topics",
   "attachmentFolderPath": "Screenshots",
   "newLinkFormat": "shortest",
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": true
 }

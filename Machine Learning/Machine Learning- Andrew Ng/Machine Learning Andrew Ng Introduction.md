@@ -52,7 +52,7 @@ Dimensionality reductions: Compress data using fewer numbers.
 Topics covered:
 [[Linear Regression Model]]
 [[Cost Function]]
-[[Gradient Descent]]
+[[Machine Learning/Machine Learning- Andrew Ng/Gradient Descent]]
 [[Gradient Descent for Linear Reg]]
 [[Multi Variate Linear Regression]]
 [[Vectorization]]

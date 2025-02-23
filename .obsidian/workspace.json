@@ -23,37 +23,7 @@
             }
           },
           {
-            "id": "76b0acc70c52eaf1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2.1 Linear Systems of Equations"
-            }
-          },
-          {
             "id": "c7cf514940805ab3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Machine Learning/Algorithms/Linear Regression.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Linear Regression"
-            }
-          },
-          {
-            "id": "f053e7f0a0bdbb02",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -66,9 +36,24 @@
               "icon": "lucide-file",
               "title": "ML Basics Questions"
             }
+          },
+          {
+            "id": "f053e7f0a0bdbb02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Machine Learning/Algorithms/Gradient Descent notes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Gradient Descent notes"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,17 +195,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f053e7f0a0bdbb02",
+  "active": "c7cf514940805ab3",
   "lastOpenFiles": [
+    "Machine Learning/Algorithms/Gradient Descent notes.md",
+    "Interview Prep/ML Basics Questions.md",
+    "Machine Learning/Algorithms/Linear Regression.md",
+    "Machine Learning/Machine Learning- Andrew Ng/Gradient Descent.md",
+    "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
     "Screenshots/Screenshot 2025-02-21 at 7.37.02 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.36.08 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.35.40 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.21.11 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.18.24 PM.png",
     "Interview Prep/Top 45 ML interview questions in 2025.md",
-    "Interview Prep/ML Basics Questions.md",
     "Screenshots/Screenshot 2025-02-16 at 10.03.28 PM.png",
-    "Machine Learning/Algorithms/Linear Regression.md",
     "Machine Learning/LLM Engineer Handbook/Preface.md",
     "Interview Prep/ML Interview Questions.md",
     "Machine Learning/Algorithms",
@@ -248,9 +236,6 @@
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.55.36 PM.png",
-    "Screenshots/Screen Shot 2025-01-23 at 22.53.51 PM.png",
-    "Languages/Python/Libraries/Pandas/Kaggle course/1. Kaggle Pandas course.md",
-    "Languages/Python/Libraries/Pandas/Kaggle course/2. Indexing, Selecting, Assigning.md",
     "Languages/Python/Libraries/Pandas/Kaggle course",
     "Languages/Python/Libraries/Pandas",
     "Languages/Python/Libraries",
