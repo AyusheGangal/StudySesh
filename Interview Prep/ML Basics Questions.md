@@ -576,7 +576,6 @@ $\| A \|_0 = 3 \quad$
 <mark style="background: #ADCCFFA6;">17. Talk about Linear Regression in detail.</mark>
 Refer to [[Linear Regression]]
 
-
 <mark style="background: #ADCCFFA6;">18. What is gradient descent? Why do we need it?</mark>
  Refer to [[Gradient Descent notes]]
  
@@ -584,3 +583,11 @@ Refer to [[Linear Regression]]
 
 
 <mark style="background: #ADCCFFA6;">19. Differentiate between generative and discriminative classification with examples.</mark>
+Machine learning classifiers are broadly categorized into **Generative** and **Discriminative** models. The key difference lies in **how they model data** and **how they make predictions**.
+
+These are two very different frameworks for how to build a machine learning model. Consider a visual metaphor: imagine we’re trying to distinguish dog images from cat images. **A generative model would have the goal of understanding what dogs look like and what cats look like.** You might literally ask such a model to ‘generate’, i.e., draw, a dog. Given a test image, the system then asks whether it’s the cat model or the dog model that better fits (is less surprised by) the image, and chooses that as its label. **A discriminative model, by contrast, is only trying to learn to distinguish the classes (perhaps without learning much about them).** So maybe all the dogs in the training data are wearing collars and the cats aren’t. If that one feature neatly separates the classes, the model is satisfied. If you ask such a model what it knows about cats all it can say is that they don’t wear collars.
+
+**Generative vs. Discriminative Classifiers**
+- **Generative Classifiers:** Learn a model of how the data is generated for each class. They estimate the joint probability distribution P(x, y), where x is the data (features) and y is the class label. From P(x, y), you can derive P(y|x) (the probability of a class given the data) using Bayes' theorem. Examples include Naive Bayes, Gaussian Mixture Models (GMMs), and Hidden Markov Models (HMMs).
+- **Discriminative Classifiers:** Directly learn the decision boundary between classes or a mapping from input x to class label y. They estimate the conditional probability distribution P(y|x) directly, without explicitly modeling the underlying data distribution. Examples include Logistic Regression, Support Vector Machines (SVMs), and Neural Networks.
+
