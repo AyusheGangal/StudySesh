@@ -591,3 +591,4 @@ These are two very different frameworks for how to build a machine learning mode
 - **Generative Classifiers:** Learn a model of how the data is generated for each class. They estimate the joint probability distribution P(x, y), where x is the data (features) and y is the class label. From P(x, y), you can derive P(y|x) (the probability of a class given the data) using Bayes' theorem. Examples include Naive Bayes, Gaussian Mixture Models (GMMs), and Hidden Markov Models (HMMs).
 - **Discriminative Classifiers:** Directly learn the decision boundary between classes or a mapping from input x to class label y. They estimate the conditional probability distribution P(y|x) directly, without explicitly modeling the underlying data distribution. Examples include Logistic Regression, Support Vector Machines (SVMs), and Neural Networks.
 
+20. What are parametric and non-parametric 
