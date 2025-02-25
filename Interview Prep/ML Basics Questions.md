@@ -591,4 +591,94 @@ These are two very different frameworks for how to build a machine learning mode
 - **Generative Classifiers:** Learn a model of how the data is generated for each class. They estimate the joint probability distribution P(x, y), where x is the data (features) and y is the class label. From P(x, y), you can derive P(y|x) (the probability of a class given the data) using Bayes' theorem. Examples include Naive Bayes, Gaussian Mixture Models (GMMs), and Hidden Markov Models (HMMs).
 - **Discriminative Classifiers:** Directly learn the decision boundary between classes or a mapping from input x to class label y. They estimate the conditional probability distribution P(y|x) directly, without explicitly modeling the underlying data distribution. Examples include Logistic Regression, Support Vector Machines (SVMs), and Neural Networks.
 
-20. What are parametric and non-parametric 
+<mark style="background: #ADCCFFA6;">20. What are parametric and non-parametric algorithms?</mark>
+Machine learning models are often categorized as **parametric** or **non-parametric**, based on how they learn from data and how they handle complexity.
+
+**Parametric Algorithms**
+* **Definition:** Parametric algorithms make strong assumptions about the *functional form* or shape of the underlying data distribution. 
+* They assume that the data can be adequately represented by a known probability distribution (e.g., normal distribution, binomial distribution). 
+* These algorithms then estimate the *parameters* of that assumed distribution from the training data.
+
+*   **Key Characteristics:**
+    * **Fixed Number of Parameters:** The number of parameters that need to be learned is fixed and determined *before* training, based on the chosen model and is independent of the number of training examples.
+    * **Simplicity and faster:** Often simpler and faster to train, especially with large datasets.
+    * **Strong Assumptions:** The performance heavily depends on the correctness of the assumption about the data distribution. If the assumption is wrong, the model can perform poorly.
+    * **Generalization:** Once the parameters are learned, the algorithm can generalize well to new data, assuming the underlying distribution remains consistent.
+    
+    * **Examples:**
+        * **Linear Regression:** Assumes a linear relationship between the input features and the output variable.  The parameters are the coefficients and the intercept.
+        * **Logistic Regression:** Assumes a logistic function can model the probability of a binary outcome. The parameters are the coefficients.
+        * **Naive Bayes:** Assumes features are conditionally independent given the class. The parameters are the means and variances (for Gaussian Naive Bayes) or probabilities (for Multinomial/Bernoulli Naive Bayes).
+        * **Perceptron:** Assumes the data is linearly separable. The parameters are the weights.
+        
+        * **Linear Regression** → Assumes a linear relationship between features.
+        - **Logistic Regression** → Uses the sigmoid function for classification.
+        - **Naïve Bayes** → Assumes independence between features.
+        - **Support Vector Machines (with Linear Kernel)** → Finds a linear decision boundary.
+        - **Neural Networks** → Number of parameters is fixed once architecture is chosen.
+	
+	- **🔹 Advantages:**
+	✔ Computationally **efficient** (fast training & inference).  
+	✔ Works well when data follows assumed **distribution**.
+	
+	- **🔹 Disadvantages:**
+	✖ **Limited flexibility** → Can underfit complex patterns.  
+	✖ Requires **correct assumptions** about data (e.g., normality, independence).
+
+* **Analogy:** Imagine trying to fit a curve through some points. A parametric method would say, "I'm going to assume this is a parabola," and then estimate the coefficients `a`, `b`, and `c` in the equation `y = ax^2 + bx + c`. The number of parameters is always three, no matter how many points you have.
+
+**Non-Parametric Algorithms**
+* **Definition:** Non-parametric algorithms make *minimal* assumptions about the underlying data distribution. They do not assume a specific functional form. Instead, they learn the structure of the data directly from the training examples.
+
+* **Key Characteristics:**
+    * **Growing Complexity:** The number of parameters that need to be learned grows with the size of the training data. More data often leads to a more complex model.
+    * **Flexibility:** Can model more complex and arbitrary data distributions.
+    * **Less Assumption-Dependent:** Less susceptible to poor performance due to incorrect assumptions about the data.
+    * **Computational Cost:** Can be computationally more expensive to train and use, especially with large datasets.
+    
+    * **Examples:**
+        * **k-Nearest Neighbors (k-NN):** Stores all training data and classifies new data points based on the majority class of their `k` nearest neighbors. The "parameters" are essentially the training data itself.
+        * **Decision Trees:** Partition the data into regions based on feature values. The structure of the tree and the split points are learned from the data.
+        * **Support Vector Machines (SVMs) with non-linear kernels (e.g., RBF kernel):** Can create complex decision boundaries by mapping data to high-dimensional spaces. The support vectors and kernel parameters are learned from the data.
+        * **Neural Networks (in some interpretations):** While neural networks have a fixed architecture, the number of weights and biases can be very large and can adapt to complex data patterns, making them behave somewhat like non-parametric models, especially deep networks.  However, the fixed architecture can also be seen as a parametric aspect.
+        
+        * **Decision Trees (CART, Random Forest, XGBoost)** → Learn hierarchical splits in data.
+        * **K-Nearest Neighbors (KNN)** → Stores all training data and makes predictions based on similarity.
+        * **Support Vector Machines (with RBF Kernel)** → Uses a flexible decision boundary.
+        * **Gaussian Processes** → Models distributions over functions, allowing for uncertainty quantification.
+        
+    - **🔹 Advantages:**
+	✔ **More flexible** → Can learn complex relationships.  
+	✔ **Works well with large datasets** and high-dimensional data.  
+	✔ **No strict assumptions** about the data distribution.
+	
+	- **🔹 Disadvantages:**
+	✖ Computationally **expensive** (training & inference can be slow).  
+	✖ **Sensitive to noise** → Overfitting is a risk.  
+	✖ **Memory-intensive** → Some models (like KNN) store all training data.
+
+* **Analogy:** Imagine trying to fit a curve through some points. A non-parametric method would say, "I'm not going to assume anything about the shape of the curve. I'm going to connect the dots in a flexible way that best fits the data." The more points you have, the more complex the curve can become.
+
+**Summary Table**
+
+| Feature              | Parametric Algorithms                                             | Non-Parametric Algorithms                                      |
+| -------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Data Assumptions** | Strong assumptions about data distribution (e.g., normality)      | Minimal assumptions about data distribution (learns from data) |
+| **Parameters**       | Fixed number of parameters                                        | Number of parameters grows with data size                      |
+| **Complexity**       | Simpler, faster training                                          | More complex, potentially slower training                      |
+| **Flexibility**      | Less flexible, can underfit if assumptions are wrong              | More flexible, can fit complex data patterns                   |
+| **Examples**         | Linear Regression, Logistic Regression, Naive Bayes               | k-NN, Decision Trees, SVMs (with non-linear kernels)           |
+| **Training Speed**   | Fast                                                              | Slow (depends on data)                                         |
+| **Inference Speed**  | Fast                                                              | Can be slow                                                    |
+| **Risk**             | Underfitting                                                      | Overfitting                                                    |
+| **Examples**         | Linear Regression, Logistic Regression, Naïve Bayes, SVM (linear) | Decision Trees, KNN, SVM (non-linear), Random Forest           |
+
+**Important Notes:**
+* The line between parametric and non-parametric is not always clear-cut. Some algorithms might have aspects of both.
+* "Non-parametric" doesn't mean "no parameters." **It means that the number of parameters is not fixed in advance and grows with the size of the data.**
+* The choice between parametric and non-parametric methods depends on the specific problem, the amount of data available, and the knowledge (or lack thereof) about the underlying data distribution.
+* Overfitting is a risk with non-parametric algorithms, especially with limited data. Regularization techniques are often used to prevent overfitting.
+
+In short, parametric algorithms are like filling in the blanks of a pre-defined form, while non-parametric algorithms build the form themselves based on the data.
+
+
