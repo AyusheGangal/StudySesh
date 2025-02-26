@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/ML Basics Questions.md",
+                "file": "Machine Learning/Algorithms/Logistic Regression notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ML Basics Questions"
+              "title": "Logistic Regression notes"
             }
           },
           {
@@ -197,9 +197,9 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
+    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/logistic_regression.pdf",
     "Machine Learning/Algorithms/Logistic Regression notes.md",
-    "Interview Prep/ML Basics Questions.md",
     "Trouble shooting.md",
     "Code/Machine Learning/LinearRegression.ipynb",
     "Code/DSA/placeholder.py",
