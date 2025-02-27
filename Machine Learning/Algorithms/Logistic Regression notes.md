@@ -1,22 +1,20 @@
 
 **1. Core Idea: Probability of a Binary Outcome**
-*   **What it is:** Logistic Regression is a classification algorithm used to predict the probability of a categorical dependent variable (target) with only two possible outcomes (binary). It's often used when the outcome is a Yes/No, True/False, 0/1, or Success/Failure. Despite the name "regression," it's a *classification* algorithm.
-*   **Goal:** To model the probability that a given input belongs to a specific category. The output is a probability value between 0 and 1. A threshold (usually 0.5) is then used to assign the input to one of the two classes.
+* **What it is:** Logistic Regression is a classification algorithm used to predict the probability of a categorical dependent variable (target) with only two possible outcomes (binary). It's often used when the outcome is a Yes/No, True/False, 0/1, or Success/Failure. Despite the name "regression," it's a *classification* algorithm.
+* **Goal:** To model the probability that a given input belongs to a specific category. The output is a probability value between 0 and 1. A threshold (usually 0.5) is then used to assign the input to one of the two classes.
 
 **2. The Logistic Function (Sigmoid)**
 
-*   **Why it's used:** The core of Logistic Regression is the logistic function (also called the sigmoid function). This function takes any real-valued number as input and transforms it into a value between 0 and 1. This is perfect for modeling probabilities.
-*   **Equation:** $$\text{sigmoid}(z) = \frac{1}{1 + e^{(-z)}}$$
+* **Why it's used:** The core of Logistic Regression is the logistic function (also called the sigmoid function). This function takes any real-valued number as input and transforms it into a value between 0 and 1. This is perfect for modeling probabilities.
+* **Equation:** $$\text{sigmoid}(z) = \frac{1}{1 + e^{(-z)}}$$where:
+    * `z` is the linear combination of the input features and their weights (plus a bias term): `z = w1*x1 + w2*x2 + ... + wn*xn + b`
+    * `e` is the base of the natural logarithm (Euler's number, approximately 2.71828)
 
-    where:
-    *   `z` is the linear combination of the input features and their weights (plus a bias term): `z = w1*x1 + w2*x2 + ... + wn*xn + b`
-    *   `e` is the base of the natural logarithm (Euler's number, approximately 2.71828)
-
-*   **Shape:** The sigmoid function has an S-shaped curve. It approaches 0 as `z` goes to negative infinity and approaches 1 as `z` goes to positive infinity.  It crosses 0.5 at `z = 0`.
+* **Shape:** The sigmoid function has an S-shaped curve. It approaches 0 as `z` goes to negative infinity and approaches 1 as `z` goes to positive infinity.  It crosses 0.5 at `z = 0`.
 
 **3. Mathematical Formulation**
 
-*   **Linear Combination:** First, calculate a linear combination of the input features (independent variables) and their corresponding weights:
+* **Linear Combination:** First, calculate a linear combination of the input features (independent variables) and their corresponding weights:
 
     `z = w1*x1 + w2*x2 + ... + wn*xn + b`
 
