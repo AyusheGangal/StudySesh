@@ -24,27 +24,27 @@
     * $w_1, w_2, ..., w_n$ are the weights (coefficients) associated with each feature
     * $b$ is the bias (intercept)
 
-* **Sigmoid Transformation:**  Pass the linear combination $z$ through the sigmoid function to get the predicted probability: $$\text{p} =\text{sigmoid}(z) = \frac{1}{1 + e^{(-z)}}$$where $p$ is the predicted probability of belonging to the positive class (usually class 1).
+* **Sigmoid Transformation:**  Pass the linear combination $z$ through the sigmoid function to get the predicted probability: $$\hat{y}_i =\text{sigmoid}(z_i) = \sigma(z_i) = \frac{1}{1 + e^{(-z_i)}}$$where $\hat{y}$ is the predicted probability of belonging to the positive class (usually class 1), and  $z_i = w^T.x_i + b$
 
 * **Classification:** Apply a threshold to the probability to classify the input:
-    * If `p >= threshold`, predict class 1 (positive class)
-    * If `p < threshold`, predict class 0 (negative class)
+    * If $\hat{y}$ >= threshold, predict class 1 (positive class)
+    * If $\hat{y}$ < threshold, predict class 0 (negative class)
 
     The default threshold is often 0.5, but you can adjust it based on the specific problem and desired trade-off between precision and recall.
 
 **4. Cost Function (Loss Function)**
 * **Why we need it:** During training, we need to adjust the weights ($w$) and bias ($b$) to minimize the difference between the predicted probabilities and the actual class labels. This is done using a cost function.
 * **Log Loss (Binary Cross-Entropy):** The most common cost function for Logistic Regression is the log loss (also known as **binary cross-entropy**). It penalizes the model more heavily for confident but wrong predictions. 
-* **Equation:** $$J(w, b) = \frac{-1}{m} \sum_i[y_i . log(p_i) + (1 - y_i) . log(1 - p_i)]$$where:
+* **Equation:** $$J(w, b) = \frac{-1}{m} \sum_i[y_i . log(\hat{y}_i) + (1 - y_i) . log(1 - \hat{y}_i)]$$where:
     * $J(w, b)$ is the cost function (to be minimized)
     * $m$ is the number of training examples
     * $y_i$ is the actual class label (0 or 1) for the $i^{th}$ example
-    * $p_i$ is the predicted probability of the $i^{th}$ example belonging to class 1
+    * $\hat{y}_i$ is the predicted probability of the $i^{th}$ example belonging to class 1
     * $Σ$ represents the sum over all training examples
 
 **Explanation:**
-- If $y_i = 1$ (actual positive), the cost is $-log(p_i)$. We want $p_i$ to be close to 1, so $-log(p_i)$ is small (close to 0). If $p_i$ is close to 0, the cost becomes very large.
-- If $y_i = 0$ (actual negative), the cost is $-log(1 - p_i)$. We want $p_i$ to be close to 0, so $(1 - p_i)$ is close to 1, and $-log(1 - p_i)$ is small. If $p_i$ is close to 1, the cost becomes very large.
+- If $y_i = 1$ (actual positive), the cost is $-log(\hat{y}_i)$. We want $\hat{y}_i$ to be close to 1, so $-log(\hat{y}_i)$ is small (close to 0). If $\hat{y}_i$ is close to 0, the cost becomes very large.
+- If $y_i = 0$ (actual negative), the cost is $-log(1 - \hat{y}_i)$. We want $p_i$ to be close to 0, so $(1 - \hat{y}_i)$ is close to 1, and $-log(1 - \hat{y}_i)$ is small. If $\hat{y}_i$ is close to 1, the cost becomes very large.
 
 **5. Optimization (Gradient Descent)**
 * **Goal:** To find the values of `w` and `b` that minimize the cost function $J(w, b)$.
@@ -57,8 +57,8 @@ where:
 - $(∂J/∂w_j)$ is the partial derivative of the cost function with respect to the $j^{th}$ weight
 - $(∂J/∂b)$ is the partial derivative of the cost function with respect to the bias
 
-* **Calculating the Gradients:** $$\frac{\partial{J}}{\partial{w_j}} = \frac{1}{m} \sum [(p_i - y_i)  x_{ij}]$$$$\frac{\partial{J}}{\partial{b}} = \frac{1}{m} \sum (p_i - y_i)$$
-where  $x_{ij}$ is the value of the $j_{th}$ feature for the $i_{th}$ example.
+* **Calculating the Gradients:** $$\frac{\partial{J}}{\partial{w_j}} = \frac{1}{m} \sum [(\hat{y}_i - y_i)  x_{ij}]$$$$\frac{\partial{J}}{\partial{b}} = \frac{1}{m} \sum (\hat{y}_i - y_i)$$
+where  $x_{ij}$ is the value of the $j^{th}$ feature for the $i^{th}$ example.
 
 * **Process:**
 1.  Initialize $w$ and $b$ with random values (or 0).
