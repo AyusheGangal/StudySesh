@@ -682,3 +682,4 @@ Machine learning models are often categorized as **parametric** or **non-paramet
 In short, parametric algorithms are like filling in the blanks of a pre-defined form, while non-parametric algorithms build the form themselves based on the data.
 
 
+

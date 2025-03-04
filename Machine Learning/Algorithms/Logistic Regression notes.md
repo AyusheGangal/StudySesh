@@ -108,3 +108,5 @@ where  $x_{ij}$ is the value of the $j^{th}$ feature for the $i^{th}$ example.
 * **Confusion Matrix:** A table that summarizes the performance of the classifier by showing the counts of true positives, true negatives, false positives, and false negatives.
 * **Log Loss (Cross-Entropy Loss):** The cost function used during training can also be used as an evaluation metric to assess the model's performance on unseen data.
 
+
+

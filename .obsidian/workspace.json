@@ -28,13 +28,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Algorithms/Logistic Regression notes.md",
+                "file": "Interview Prep/ML Basics Questions.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "Logistic Regression notes"
+              "title": "ML Basics Questions"
             }
           },
           {
@@ -72,7 +81,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -195,10 +205,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7cf514940805ab3",
+  "active": "9ce92164f35a9bf7",
   "lastOpenFiles": [
-    "Machine Learning/Algorithms/Linear Regression.md",
     "Machine Learning/Algorithms/Logistic Regression notes.md",
+    "Machine Learning/Algorithms/Linear Regression.md",
     "Screenshots/Screenshot 2025-02-28 at 9.44.51 PM.png",
     "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/logistic_regression.pdf",
