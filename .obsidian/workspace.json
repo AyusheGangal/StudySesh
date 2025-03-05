@@ -47,18 +47,27 @@
             }
           },
           {
-            "id": "f053e7f0a0bdbb02",
+            "id": "2b7c1b235fcbeaa4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Algorithms/Gradient Descent notes.md",
+                "file": "Machine Learning/Algorithms/Logistic Regression notes.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "Gradient Descent notes"
+              "title": "Logistic Regression notes"
             }
           }
         ],
@@ -205,12 +214,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ce92164f35a9bf7",
+  "active": "c7cf514940805ab3",
   "lastOpenFiles": [
     "Machine Learning/Algorithms/Logistic Regression notes.md",
+    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/Linear Regression.md",
     "Screenshots/Screenshot 2025-02-28 at 9.44.51 PM.png",
-    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/logistic_regression.pdf",
     "Trouble shooting.md",
     "Code/Machine Learning/LinearRegression.ipynb",

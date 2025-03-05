@@ -681,5 +681,27 @@ Machine learning models are often categorized as **parametric** or **non-paramet
 
 In short, parametric algorithms are like filling in the blanks of a pre-defined form, while non-parametric algorithms build the form themselves based on the data.
 
+<mark style="background: #ADCCFFA6;">20. Write a note on Logistic Regression</mark>
+Refer to [[Logistic Regression notes]]
 
+<mark style="background: #ADCCFFA6;">21. What is sigmoid function?</mark>
+The **sigmoid function** is a mathematical function that **maps any real number** to a value between **0 and 1**. It is widely used in **Logistic Regression** and **Neural Networks** for probability estimation and activation functions.
+
+**Mathematical Formula**$$\sigma(z) = \frac{1}{1 + e^{-z}}$$​where:
+- $z$ is the input (e.g., $z = w^T x + b$ in Logistic Regression).
+- $e$ is Euler's number ($\approx 2.718$).
+- $\sigma(z)$ is always between **0 and 1**.
+
+**Graph & Interpretation**: The function has an **S-shaped (sigmoid) curve**.
+- When $z \to +\infty, \sigma(z) \approx 1$.
+- When $z \to -\infty, \sigma(z) \approx 0$.
+- When $z=0, \sigma(0) = 0.5$.
+
+ **Why Use Sigmoid?**
+✔ **Probability Interpretation** → Outputs a value in (0,1), useful for binary classification.  
+✔ **Smooth & Differentiable** → Enables Gradient Descent optimization.  
+✔ **Squashes Large Values** → Prevents extreme outputs, stabilizing training.
+
+**Derivative of Sigmoid Function**
+To use **Gradient Descent**, we need the derivative:$$\frac{d\sigma(z)}{dz} = \sigma(z) (1 - \sigma(z))$$This is useful for **computing gradients in Logistic Regression and Neural Networks**.
 
