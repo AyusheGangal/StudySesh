@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/ML Basics Questions.md",
+                "file": "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ML Basics Questions"
+              "title": "Chapter 1 - A pragmatic philosophy"
             }
           },
           {
@@ -216,12 +216,16 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
-    "Machine Learning/Algorithms/Logistic Regression notes.md",
+    "Trouble shooting.md",
+    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
+    "Book Club/The Pragmatic Programmer",
+    "Book Club",
+    "Passion Projects/Large Language Models Project/Text Similarity.md",
     "Interview Prep/ML Basics Questions.md",
+    "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Machine Learning/Algorithms/Linear Regression.md",
     "Screenshots/Screenshot 2025-02-28 at 9.44.51 PM.png",
     "Machine Learning/Algorithms/logistic_regression.pdf",
-    "Trouble shooting.md",
     "Code/Machine Learning/LinearRegression.ipynb",
     "Code/DSA/placeholder.py",
     "Code/Machine Learning",
@@ -255,11 +259,8 @@
     "Languages/Python/Libraries/Pandas/Kaggle course/6. Renaming and Combining.md",
     "- Topics/predictions.md",
     "- Topics/training.md",
-    "- Topics/parameters.md",
-    "Machine Learning/Google Intro to ML course",
     "Screenshots/Screenshot 2025-01-24 at 9.00.51 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
-    "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png",
-    "Languages/Python/Libraries/Pandas/Kaggle course"
+    "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png"
   ]
 }
