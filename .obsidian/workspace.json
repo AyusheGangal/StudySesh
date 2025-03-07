@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
+                "file": "Interview Prep/ML Basics Questions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 1 - A pragmatic philosophy"
+              "title": "ML Basics Questions"
             }
           },
           {
@@ -216,12 +216,20 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
-    "Trouble shooting.md",
+    "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",
+    "Machine Learning/MIsc/Winsorization.md",
+    "Interview Prep/ML Basics Questions.md",
     "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
+    "Resources/ML Engineering.md",
+    "Interview Prep/Materials/My Cover Letter SDE.md",
+    "Interview Prep/Materials/My Cover Letter DS.md",
+    "Interview Prep/Materials/Experience Summary.md",
+    "Interview Prep/Materials/Cover Letter.md",
+    "Interview Prep/Materials",
+    "Trouble shooting.md",
     "Book Club/The Pragmatic Programmer",
     "Book Club",
     "Passion Projects/Large Language Models Project/Text Similarity.md",
-    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Machine Learning/Algorithms/Linear Regression.md",
     "Screenshots/Screenshot 2025-02-28 at 9.44.51 PM.png",
@@ -247,18 +255,10 @@
     "Resources/Resources to become a FAANG ML Engineer.md",
     "Machine Learning/Hands on ML book/Introduction.md",
     "- Topics/Projects.md",
-    "Machine Learning/Hands on ML book",
     "Machine Learning/Google Intro to ML course/What is Machine Learning.md",
     "Machine Learning/Google Intro to ML course/Supervised Learning.md",
     "- Topics/labels.md",
     "- Topics/example.md",
-    "- Topics/feature crosses.md",
-    "- Topics/synthetic features.md",
-    "- Topics/features.md",
-    "- Topics/model.md",
-    "Languages/Python/Libraries/Pandas/Kaggle course/6. Renaming and Combining.md",
-    "- Topics/predictions.md",
-    "- Topics/training.md",
     "Screenshots/Screenshot 2025-01-24 at 9.00.51 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png"

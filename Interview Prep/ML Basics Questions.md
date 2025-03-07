@@ -705,3 +705,87 @@ The **sigmoid function** is a mathematical function that **maps any real number*
 **Derivative of Sigmoid Function**
 To use **Gradient Descent**, we need the derivative:$$\frac{d\sigma(z)}{dz} = \sigma(z) (1 - \sigma(z))$$This is useful for **computing gradients in Logistic Regression and Neural Networks**.
 
+<mark style="background: #ADCCFFA6;">22. How does logistic regression handle outliers? Can it be improved? Explain in detail</mark>
+
+Outliers are **extreme values** in the dataset that significantly **deviate from the rest of the data**. Logistic Regression is **sensitive** to outliers because it **relies on a linear decision boundary**, and extreme values can **distort the optimization process**.
+
+The **decision boundary** in Logistic Regression is determined by the weight parameters ww, which are **optimized using Gradient Descent** to minimize the **Cross-Entropy Loss**:
+$$J(w, b) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]$$
+Since Gradient Descent **adjusts weights based on all samples**, **outliers with extreme feature values** can cause:  
+✔ **Large gradient updates**, making training unstable.  
+✔ **Shifted decision boundaries**, leading to **misclassification of normal points**.  
+✔ **Overfitting**, as the model tries to fit to these rare extreme values.
+
+**Example: Outliers Affecting Decision Boundary**
+Consider a dataset where most points follow a **clear decision boundary**, but **one outlier is far away**.
+**Without Outliers:**
+- The decision boundary is well-defined and **splits the data optimally**.
+
+**With Outliers:**
+- The model **tries to adjust** for the outlier, shifting the decision boundary **incorrectly**, leading to **wrong classifications**.
+
+**Visualization:**
+- **Without outliers →** The boundary is centered.
+- **With outliers →** The boundary shifts **toward the outlier**, making normal points misclassified.
+
+
+**How Can We Improve Logistic Regression to Handle Outliers?**
+
+**1. Apply Robust Regularization (L1/L2)**: Regularization **penalizes large weight values**, preventing extreme changes due to outliers.
+
+**L2 Regularization (Ridge Regression):**
+$$J(w, b) = -\sum [y \log(\hat{y}) + (1 - y) \log(1 - \hat{y})] + \lambda \sum w^2$$
+**Effect:** Prevents the model from giving too much importance to any single feature, reducing the effect of outliers.
+
+**L1 Regularization (Lasso Regression):**
+$$J(w, b) = -\sum [y \log(\hat{y}) + (1 - y) \log(1 - \hat{y})] + \lambda \sum |w|
+$$
+**Effect:** Forces some weights to be **exactly zero**, performing feature selection and reducing the influence of outliers.
+
+**2. Use Robust Feature Scaling (Winsorization or Clipping)**  
+Outliers cause issues because **feature values vary drastically**. **Standardization or Clipping** can reduce their effect.
+
+[[Winsorizing the data]]
+- Replaces extreme values with **percentile-based limits** (e.g., **clipping the top 1% and bottom 1%** of values).
+- Prevents outliers from having an **excessive influence**.
+
+**Standardization:**
+- Convert all features to **Z-scores**:
+$$X' = \frac{X - \mu}{\sigma}$$
+- Ensures **outliers don’t dominate feature scaling**.
+
+**3. Detect and Remove Outliers Before Training**  
+Instead of modifying the model, **remove extreme values** from training data.
+
+**Use IQR (Interquartile Range):**
+- Compute **Q1 (25th percentile) and Q3 (75th percentile)**.
+- Define **outlier threshold**:
+$$\text{Outlier} \text{ if } X > Q3 + 1.5 \times IQR \text{ or } X < Q1 - 1.5 \times IQR$$
+
+
+**Use Z-score Filtering:**
+- Compute **Z-score** for each feature:
+$$Z = \frac{X - \mu}{\sigma}$$
+- Remove data points where Z| > 3.
+
+**4. Use a More Robust Classifier (e.g., Tree-Based Models)**  
+If outliers **significantly impact Logistic Regression**, consider using:  
+✔ **Decision Trees** (handle outliers better).  
+✔ **Random Forests** (reduce sensitivity to single points).  
+✔ **Support Vector Machines (SVMs)** with robust kernels.
+
+
+**Summary Table**
+
+|**Method**|**How It Helps?**|
+|---|---|
+|**L1/L2 Regularization**|Reduces impact of extreme feature values.|
+|**Feature Scaling (Winsorization, Standardization)**|Prevents outliers from dominating training.|
+|**Outlier Removal (IQR, Z-score)**|Removes extreme data points before training.|
+|**Switching to Robust Models (Trees, SVMs)**|Avoids sensitivity to individual outliers.|
+
+**Conclusion**
+- Logistic Regression **is sensitive to outliers**, as they distort the decision boundary.
+- **Regularization, feature scaling, and outlier detection** can significantly **reduce their impact**.
+- **Tree-based models and SVMs** are alternatives if Logistic Regression **struggles too much**.
+
