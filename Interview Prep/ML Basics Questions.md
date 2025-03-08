@@ -789,3 +789,7 @@ If outliers **significantly impact Logistic Regression**, consider using:
 - **Regularization, feature scaling, and outlier detection** can significantly **reduce their impact**.
 - **Tree-based models and SVMs** are alternatives if Logistic Regression **struggles too much**.
 
+<mark style="background: #ADCCFFA6;">23. What happens if we remove the sigmoid function and just use a linear model with Cross-Entropy Loss?</mark>
+Without sigmoid, the predictions can be **any real number**, and plugging them into Cross-Entropy loss:
+$$J(w, b) = -\sum y \log(\hat{y}) + (1 - y) \log(1 - \hat{y})J(w,b)=−∑ylog(y^​)+(1−y)log(1−y^​)$$
+can result in **negative probabilities** or invalid values for log function, leading to training failures.
