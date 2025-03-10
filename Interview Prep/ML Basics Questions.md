@@ -789,7 +789,32 @@ If outliers **significantly impact Logistic Regression**, consider using:
 - **Regularization, feature scaling, and outlier detection** can significantly **reduce their impact**.
 - **Tree-based models and SVMs** are alternatives if Logistic Regression **struggles too much**.
 
+
 <mark style="background: #ADCCFFA6;">23. What happens if we remove the sigmoid function and just use a linear model with Cross-Entropy Loss?</mark>
 Without sigmoid, the predictions can be **any real number**, and plugging them into Cross-Entropy loss:
 $$J(w, b) = -\sum y \log(\hat{y}) + (1 - y) \log(1 - \hat{y})$$
 can result in **negative probabilities** or invalid values for log function, leading to training failures.
+
+
+<mark style="background: #ADCCFFA6;">24. What would happen if we used MSE as the loss function instead of Cross-Entropy?</mark>
+Using MSE:$$J(w, b) = \frac{1}{m} \sum (\hat{y} - y)^2$$leads to **slow learning** and **bad gradient behavior** because:
+1. **Gradients shrink** → The derivative of sigmoid is small, making updates very slow.
+2. **Non-convexity** → The loss function is no longer convex, making gradient descent inefficient.
+Cross-Entropy is **better because it is convex and provides well-scaled gradients**.
+
+
+<mark style="background: #ADCCFFA6;">25. Can Logistic Regression be used for multi-class classification?</mark>
+Yes, but standard Logistic Regression is for **binary classification**. For multiple classes, we use:
+
+1. **One-vs-All (OvA)** → Train multiple binary classifiers, one for each class.
+2. **Softmax Regression** → Uses the **Softmax function** instead of Sigmoid to assign probabilities to multiple classes.
+$$P(y=k | X) = \frac{e^{w_k^T X}}{\sum_{j=1}^{K} e^{w_j^T X}}​$$
+**Softmax is the preferred approach** for multi-class problems.
+
+
+<mark style="background: #ADCCFFA6;">26. How does feature scaling impact Logistic Regression?</mark>
+Logistic Regression is **sensitive to feature magnitudes**. If features have vastly different scales, **gradient descent will converge slowly**.  
+
+**Fix:** Standardize features using **Z-score normalization**:
+$$X' = \frac{X - \mu}{\sigma}$$
+
