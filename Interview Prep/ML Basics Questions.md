@@ -818,4 +818,121 @@ Logistic Regression is **sensitive to feature magnitudes**. If features have vas
 **Fix:** Standardize features using **Z-score normalization**:
 $$X' = \frac{X - \mu}{\sigma}$$
 
+<mark style="background: #ADCCFFA6;">27. What are convex and non-convex loss functions?</mark>
+Loss functions are used to measure how well a machine learning model is performing. They can be **convex** or **non-convex**, which affects how easily we can optimize them using gradient descent.
 
+A loss function J(w)is **convex** if it has a **single global minimum**, meaning **gradient descent will always find the best solution**.
+
+A function is convex if its second derivative is **always non-negative**:
+$$\frac{d^2 J}{d w^2} \geq 0$$
+**Why It’s Important:**  
+✔ **Easier optimization** → No local minima, gradient descent always converges to the global minimum.  
+✔ **Guaranteed convergence** if the learning rate is properly chosen.
+
+**Examples of Convex Loss Functions**
+1. **Mean Squared Error (MSE) - Used in Linear Regression**$$J(w) = \frac{1}{m} \sum_{i=1}^{m} (y_i - \hat{y}_i)^2$$
+	- Parabolic shape → Always convex.
+	
+2. **Mean Absolute Error (MAE)**
+$$J(w) = \frac{1}{m} \sum_{i=1}^{m} |y_i - \hat{y}_i|$$
+    - Still convex, but not smooth at $y_i = \hat{y}_i$.
+    
+3. **Binary Cross-Entropy (Log Loss) - Used in Logistic Regression**
+    $$J(w) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]$$
+    - **Convex** for Logistic Regression → Ensures smooth optimization.
+
+
+A loss function is **non-convex** if it has **multiple local minima** and possibly **saddle points**, making gradient descent optimization harder.
+
+Non-convex functions **can have multiple local minima**, meaning gradient descent might **get stuck**.
+
+**Examples of Non-Convex Loss Functions**
+1. **Loss Functions in Deep Learning (Neural Networks)**
+    - Due to **multiple layers and complex activation functions**, neural network loss landscapes are highly **non-convex**.
+    - **Example:** Cross-Entropy Loss in Deep Networks.
+    
+2. **Hinge Loss - Used in SVMs**
+    $$J(w) = \sum_{i=1}^{m} \max(0, 1 - y_i w^T x_i)$$
+    - **Non-convex when combined with kernel tricks**.
+    
+3. **Reinforcement Learning Loss Functions**
+    - **Policy gradient methods** use loss functions that are non-convex, making convergence difficult.
+
+
+**Why Does Convexity Matter?**
+
+| **Aspect**           | **Convex Loss**                               | **Non-Convex Loss**             |
+| -------------------- | --------------------------------------------- | ------------------------------- |
+| **Optimization**     | Easy, always converges                        | Hard, may get stuck             |
+| **Gradient Descent** | Always works                                  | Can get stuck in local minima   |
+| **Examples**         | MSE, MAE, Cross-Entropy (Logistic Regression) | Deep Learning, SVM with kernels |
+
+✅ **Convex loss functions ensure easy optimization**.  
+✅ **Non-convex loss functions require tricks like momentum, adaptive learning rates, or random restarts**.
+
+**Conclusion**
+- **Convex Loss (Logistic Regression, Linear Regression)** → **Guaranteed convergence** with gradient descent.
+- **Non-Convex Loss (Neural Networks, SVMs, RL)** → Requires **advanced optimization techniques**.
+
+
+<mark style="background: #ADCCFFA6;">28. Why are non-convex functions used?</mark>
+While **convex functions** are easier to optimize, **non-convex functions** are essential in machine learning because they **better model complex relationships** in data. Many powerful models—such as **deep learning, kernel methods, and reinforcement learning**—inherently require non-convex loss functions.
+
+**Why Do We Use Non-Convex Loss Functions?**
+1. Real-World Data is Non-Linear
+- Many datasets do not have simple **linear relationships**.
+- **Convex models (e.g., Logistic Regression, Linear Regression)** fail when data has **complex patterns**.
+- **Non-convex models** (e.g., Deep Learning) can **capture intricate relationships**.
+
+2. Deep Learning Uses Non-Convex Loss Functions
+- **Neural networks** have multiple **hidden layers**, introducing **non-linear transformations**.
+- This makes the **loss function highly non-convex**, with multiple **local minima and saddle points**.
+- However, **gradient-based optimization** still works well due to:
+    - **Batch Normalization** (helps smooth the loss landscape).
+    - **Momentum and Adam optimizer** (helps escape poor local minima).
+
+1. Kernel Methods in SVMs Are Non-Convex
+- **Support Vector Machines (SVMs) with non-linear kernels (RBF, polynomial, etc.)** create **non-convex loss surfaces**.
+- These kernels allow **better separation of complex data**, making **SVMs competitive with deep learning** in certain tasks.
+
+1. Reinforcement Learning (RL) Uses Non-Convex Loss
+- **Policy gradient methods (e.g., REINFORCE, PPO)** involve **stochastic reward functions**, leading to **non-convex optimization**.
+- Despite this, **gradient-based methods still work well in RL**, though **convergence is harder**.
+
+1. Feature Selection in Machine Learning Uses Non-Convex Loss
+- **L0 regularization** (selecting a fixed number of features) is **non-convex**, but it is useful when we want **sparse models**.
+- **L1 regularization (Lasso)** is a convex approximation of this idea.
+
+
+**How Do We Optimize Non-Convex Loss Functions?**
+Since non-convex functions can **trap models in local minima**, we use special optimization techniques:
+
+1. **Momentum-Based Optimization (SGD + Momentum, Adam, RMSprop)**
+- Uses **past gradients** to help escape local minima.
+- **Adam optimizer** dynamically adjusts learning rates for different parameters.
+
+2. **Random Restarts**
+- Train the model multiple times with **different initializations** to avoid poor local minima.
+
+3. **Dropout & Regularization** (for deep learning)
+- **Dropout** helps by forcing models to generalize better.
+- **L2 Regularization (Weight Decay)** prevents extreme weight updates.
+
+4. **Batch Normalization**
+- Smooths the loss surface, making optimization **more stable**.
+
+
+**Convex vs. Non-Convex: Trade-offs**
+
+|**Aspect**|**Convex Functions**|**Non-Convex Functions**|
+|---|---|---|
+|**Optimization**|Easier (global minimum)|Harder (local minima)|
+|**Computational Complexity**|Faster|Slower|
+|**Expressive Power**|Limited (linear patterns)|Higher (complex patterns)|
+|**Example Models**|Linear Regression, Logistic Regression|Deep Learning, SVMs with Kernels, RL|
+
+
+**Conclusion**
+- **Non-convex functions allow us to model complex real-world data** that convex functions fail to capture.  
+- **Deep Learning, SVMs, and Reinforcement Learning** would not be possible without non-convex optimization.  
+- **Despite challenges, advanced optimizers like Adam & Momentum make training effective.**
