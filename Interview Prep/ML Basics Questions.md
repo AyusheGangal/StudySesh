@@ -930,9 +930,24 @@ Since non-convex functions can **trap models in local minima**, we use special o
 |**Computational Complexity**|Faster|Slower|
 |**Expressive Power**|Limited (linear patterns)|Higher (complex patterns)|
 |**Example Models**|Linear Regression, Logistic Regression|Deep Learning, SVMs with Kernels, RL|
-
-
 **Conclusion**
 - **Non-convex functions allow us to model complex real-world data** that convex functions fail to capture.  
 - **Deep Learning, SVMs, and Reinforcement Learning** would not be possible without non-convex optimization.  
 - **Despite challenges, advanced optimizers like Adam & Momentum make training effective.**
+
+
+<mark style="background: #ADCCFFA6;">29. Why is the sigmoid function used instead of other activation functions?</mark>
+- Maps values to **[0,1]**, which is useful for probability.  
+- Has a **nice derivative**:
+$$\sigma'(z) = \sigma(z)(1 - \sigma(z))$$
+which simplifies gradient computation.
+
+
+<mark style="background: #ADCCFFA6;">30. How does a machine learning model like logistic regression behave with imbalanced datasets?</mark>
+It tends to predict the **majority class** more often, leading to poor performance.
+
+**Fixes:**
+- **Class weighting** → Assign higher weight to the minority class.
+- **Oversampling/Undersampling** → Balance the dataset.
+- **Use Precision-Recall curves instead of Accuracy**.
+
