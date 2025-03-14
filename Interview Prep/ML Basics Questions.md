@@ -951,3 +951,12 @@ It tends to predict the **majority class** more often, leading to poor performan
 - **Oversampling/Undersampling** → Balance the dataset.
 - **Use Precision-Recall curves instead of Accuracy**.
 
+
+<mark style="background: #ADCCFFA6;">31. Compare Logistic Regression with k-NN. When does Logistic Regression perform better?</mark>
+**Logistic Regression is better when:**
+- The data is **linearly separable**.
+- The dataset is **large**, because k-NN is slow.
+
+**k-NN is better when:**
+- The decision boundary is **non-linear**.
+- There is **no clear mathematical model**.
