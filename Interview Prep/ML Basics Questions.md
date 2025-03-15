@@ -960,3 +960,23 @@ It tends to predict the **majority class** more often, leading to poor performan
 **k-NN is better when:**
 - The decision boundary is **non-linear**.
 - There is **no clear mathematical model**.
+
+
+<mark style="background: #ADCCFFA6;">32. Modify the sigmoid function with a different non-linearity (e.g., tanh, ReLU). How does it affect model performance?</mark>
+Replacing the sigmoid function with a different non-linearity like **tanh** or **ReLU** can significantly impact model performance in various ways:
+
+**Tanh Activation**
+$$\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}$$
+- **Effect:** Tanh has a wider range (-1 to 1) compared to sigmoid (0 to 1), leading to zero-centered outputs. This helps in better gradient flow and can lead to faster convergence.
+- **Use case:** Often used in hidden layers for better weight updates.
+
+**ReLU Activation**
+$$\text{ReLU}(x) = \max(0, x)$$
+- **Effect:** Introduces sparsity (since negative values become zero) and helps avoid the vanishing gradient problem. However, it can suffer from the **dying ReLU problem**, where neurons get stuck at zero.
+- **Use case:** Preferred in deep networks for efficiency.
+
+**Impact on Model Performance:**
+- **Convergence Speed:** ReLU often leads to faster training due to efficient gradient propagation.
+- **Gradient Vanishing:** Tanh still has a vanishing gradient issue for large/small inputs but is better than sigmoid.
+- **Final Accuracy:** Depends on the dataset; ReLU generally performs better in deep networks, while tanh might be useful in shallower ones.
+
