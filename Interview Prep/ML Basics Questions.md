@@ -980,3 +980,16 @@ $$\text{ReLU}(x) = \max(0, x)$$
 - **Gradient Vanishing:** Tanh still has a vanishing gradient issue for large/small inputs but is better than sigmoid.
 - **Final Accuracy:** Depends on the dataset; ReLU generally performs better in deep networks, while tanh might be useful in shallower ones.
 
+<mark style="background: #ADCCFFA6;">33. What is KNN?</mark>
+The **K-Nearest Neighbors (KNN)** algorithm is one of the simplest and most intuitive **machine learning algorithms** used for both **classification** and **regression** tasks.
+
+KNN is a **lazy learning, instance-based** algorithm that **does not explicitly learn a model**. Instead, it makes predictions by **finding the K closest training samples** to a given test point and using them to determine the output.
+
+**Intuition**
+1. Choose a value for **K** (number of neighbors).
+2. Find the **K nearest points** from the training data based on a chosen distance metric (e.g., Euclidean distance).
+3. **For classification:** Take a **majority vote** among the K neighbors.
+4. **For regression:** Compute the **average** (or weighted average) of the K neighbors.
+
+**Key Idea:** "A data point should be classified the same way as its nearest neighbors."
+
