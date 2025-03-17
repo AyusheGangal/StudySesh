@@ -993,3 +993,33 @@ KNN is a **lazy learning, instance-based** algorithm that **does not explicitly 
 
 **Key Idea:** "A data point should be classified the same way as its nearest neighbors."
 
+
+<mark style="background: #ADCCFFA6;">34. Explain the steps for KNN</mark>
+**Step 1: Choose K (number of neighbors)**
+- If **K is too small** → Model becomes **sensitive to noise** (overfitting).
+- If **K is too large** → Model becomes **too smooth** (underfitting).
+- **Rule of thumb:** Choose $K \approx \sqrt{N}$​, where N is the number of training samples.
+
+**Step 2: Calculate Distance**
+Common distance metrics:
+1. **Euclidean Distance (default)**$$d(X_1, X_2) = \sqrt{\sum (X_{1i} - X_{2i})^2}​$$
+    - Used for **continuous numeric data**.
+    - Measures **straight-line distance** between points.
+    
+2. **Manhattan Distance**$$d(X_1, X_2) = \sum |X_{1i} - X_{2i}|$$
+    - Good for **grid-like structures** (e.g., chessboard moves).
+    
+3. **Minkowski Distance (Generalized Distance Metric)**$$d(X_1, X_2) = \left( \sum |X_{1i} - X_{2i}|^p \right)^{1/p}$$
+    - If p=1p = 1p=1, it is **Manhattan Distance**.
+    - If p=2p = 2p=2, it is **Euclidean Distance**.
+    
+4. **Cosine Similarity (for Text Data)**$$\cos(\theta) = \frac{A \cdot B}{\|A\| \|B\|}$$
+- Measures the **angle** between two vectors, instead of absolute distance.
+
+**Step 3: Find the K Nearest Neighbors**
+- Sort training points by **distance to the test point**.
+- Select the **K closest points**.
+
+**Step 4: Make Predictions**
+- **For classification:** Assign the **most common label** among K neighbors.
+- **For regression:** Take the **average** (or weighted average) of neighbors' values.
