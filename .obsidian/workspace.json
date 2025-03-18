@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/ML Basics Questions.md",
+                "file": "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ML Basics Questions"
+              "title": "Chapter 1 - A pragmatic philosophy"
             }
           },
           {
@@ -216,11 +216,12 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
-    "Machine Learning/Algorithms/Logistic Regression notes.md",
+    "Interview Prep/Materials/Software Questions.md",
+    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
     "Interview Prep/ML Basics Questions.md",
+    "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",
     "Machine Learning/MIsc/Winsorization.md",
-    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
     "Resources/ML Engineering.md",
     "Interview Prep/Materials/My Cover Letter SDE.md",
     "Interview Prep/Materials/My Cover Letter DS.md",
@@ -258,7 +259,6 @@
     "Machine Learning/Google Intro to ML course/What is Machine Learning.md",
     "Machine Learning/Google Intro to ML course/Supervised Learning.md",
     "- Topics/labels.md",
-    "- Topics/example.md",
     "Screenshots/Screenshot 2025-01-24 at 9.00.51 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png"
