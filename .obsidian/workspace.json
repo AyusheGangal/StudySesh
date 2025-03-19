@@ -47,6 +47,30 @@
             }
           },
           {
+            "id": "551da26836bdfeae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/Software Questions.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Software Questions"
+            }
+          },
+          {
             "id": "2b7c1b235fcbeaa4",
             "type": "leaf",
             "state": {
@@ -71,7 +95,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -214,10 +238,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7cf514940805ab3",
+  "active": "551da26836bdfeae",
   "lastOpenFiles": [
-    "Interview Prep/Materials/Software Questions.md",
     "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
+    "Interview Prep/Software Questions.md",
     "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",

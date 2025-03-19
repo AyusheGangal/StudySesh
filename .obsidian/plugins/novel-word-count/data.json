@@ -16072,23 +16072,23 @@
         "nonWhitespaceCharacterCount": 0
       }
     },
-    "Interview Prep/Materials/Software Questions.md": {
+    "Interview Prep/Software Questions.md": {
       "isCountable": true,
       "targetNodeType": "file",
       "noteCount": 1,
-      "wordCount": 357,
+      "wordCount": 362,
       "wordCountTowardGoal": 0,
       "wordGoal": null,
-      "pageCount": 1.19,
-      "characterCount": 3057,
-      "nonWhitespaceCharacterCount": 2672,
-      "readingTimeInMinutes": 1.3471698113207546,
+      "pageCount": 1.2066666666666668,
+      "characterCount": 3093,
+      "nonWhitespaceCharacterCount": 2701,
+      "readingTimeInMinutes": 1.3660377358490565,
       "linkCount": 0,
       "embedCount": 0,
       "aliases": null,
       "createdDate": 1742269787313,
-      "modifiedDate": 1742269811336,
-      "sizeInBytes": 3057,
+      "modifiedDate": 1742270042664,
+      "sizeInBytes": 3093,
       "sessionStart": {
         "noteCount": 0,
         "pageCount": 0,
