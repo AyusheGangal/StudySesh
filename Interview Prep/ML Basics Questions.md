@@ -1022,4 +1022,33 @@ Common distance metrics:
 
 **Step 4: Make Predictions**
 - **For classification:** Assign the **most common label** among K neighbors.
-- **For regression:** Take the **average** (or weighted average) of neighbors' values.
+- **For regression:** Take the **average** (or weighted average) of neighbors' values
+
+<mark style="background: #ADCCFFA6;">Define tokens and tokenization?</mark>
+**Tokens** are small units of data used to train gen AI models like ChatGPT and help them understand and generate language. This data may take the form of whole words, subwords, and other content. A **token** is a **smallest meaningful unit** of text. It can be:  
+- A **word** ("apple", "machine")  
+- A **subword** ("un-", "-ing")  
+- A **character** ("a", "b", "c")  
+- A **symbol** ("$", "@", "5")
+
+Tokens are essential for language models because they are the smallest units of meaning. By analyzing tokens, models can understand the structure and semantics of text. The process of making raw data like text trainable for language models is known as **tokenization**. This may include splitting text into individual words.
+
+**Tokenization** is the process of **splitting text into tokens** for processing in NLP (Natural Language Processing).
+
+**Example:**  
+**Input:** `"Machine learning is fun!"`  
+**Word Tokenization:** `["Machine", "learning", "is", "fun", "!"]`  
+**Character Tokenization:** `["M", "a", "c", "h", "i", "n", "e", ...]`
+
+**Types of Tokenization**
+- **Word Tokenization:** Splits text into words (`["Hello", "world"]`).  
+- **Subword Tokenization:** Breaks words into meaningful parts (`["mach", "ine", "learn", "ing"]`).  
+- **Character Tokenization:** Breaks text into individual characters (`["H", "e", "l", "l", "o"]`).  
+- **Byte Pair Encoding (BPE):** Merges common character pairs (`["ma", "chine", " learn", "ing"]`).  
+- **Sentence Tokenization:** Splits paragraphs into sentences.
+
+**Why is Tokenization Important?**
+- Helps **convert text into numerical form** for ML models.  
+- Improves **efficiency** by reducing vocabulary size.  
+- Affects **accuracy**—poor tokenization can harm model performance.
+

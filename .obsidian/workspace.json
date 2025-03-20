@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Software Questions.md",
+                "file": "Interview Prep/ML Basics Questions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Software Questions"
+              "title": "ML Basics Questions"
             }
           },
           {
@@ -240,8 +240,9 @@
   },
   "active": "551da26836bdfeae",
   "lastOpenFiles": [
-    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
+    "Interview Prep/ML Interview Questions.md",
     "Interview Prep/Software Questions.md",
+    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
     "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",
@@ -275,7 +276,6 @@
     "Interview Prep/Top 45 ML interview questions in 2025.md",
     "Screenshots/Screenshot 2025-02-16 at 10.03.28 PM.png",
     "Machine Learning/LLM Engineer Handbook/Preface.md",
-    "Interview Prep/ML Interview Questions.md",
     "Machine Learning/Algorithms",
     "Resources/Resources to become a FAANG ML Engineer.md",
     "Machine Learning/Hands on ML book/Introduction.md",
