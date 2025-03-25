@@ -14672,31 +14672,6 @@
         "nonWhitespaceCharacterCount": 0
       }
     },
-    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md": {
-      "isCountable": true,
-      "targetNodeType": "file",
-      "noteCount": 1,
-      "wordCount": 853,
-      "wordCountTowardGoal": 0,
-      "wordGoal": null,
-      "pageCount": 2.8433333333333333,
-      "characterCount": 6018,
-      "nonWhitespaceCharacterCount": 5088,
-      "readingTimeInMinutes": 3.218867924528302,
-      "linkCount": 0,
-      "embedCount": 0,
-      "aliases": null,
-      "createdDate": 1741228641606,
-      "modifiedDate": 1742269769687,
-      "sizeInBytes": 6018,
-      "sessionStart": {
-        "noteCount": 1,
-        "pageCount": 0,
-        "wordCount": 0,
-        "characterCount": 0,
-        "nonWhitespaceCharacterCount": 0
-      }
-    },
     "- Topics/tuning.md": {
       "isCountable": true,
       "targetNodeType": "file",
@@ -16089,6 +16064,81 @@
       "createdDate": 1742269787313,
       "modifiedDate": 1742270042664,
       "sizeInBytes": 3093,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
+    },
+    "car or not.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 0,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0,
+      "characterCount": 0,
+      "nonWhitespaceCharacterCount": 0,
+      "readingTimeInMinutes": 0,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1742658423245,
+      "modifiedDate": 1742658423245,
+      "sizeInBytes": 0,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
+    },
+    "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 11,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0.03666666666666667,
+      "characterCount": 91,
+      "nonWhitespaceCharacterCount": 74,
+      "readingTimeInMinutes": 0.04150943396226415,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1742872642796,
+      "modifiedDate": 1742872727820,
+      "sizeInBytes": 91,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
+    },
+    "Book Club/The Pragmatic Programmer/Chapter 1 - The pragmatic philosophy.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 853,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 2.8433333333333333,
+      "characterCount": 6018,
+      "nonWhitespaceCharacterCount": 5088,
+      "readingTimeInMinutes": 3.218867924528302,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1741228641606,
+      "modifiedDate": 1742269769687,
+      "sizeInBytes": 6018,
       "sessionStart": {
         "noteCount": 0,
         "pageCount": 0,

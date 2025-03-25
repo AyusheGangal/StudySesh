@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
+                "file": "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 1 - A pragmatic philosophy"
+              "title": "Chapter 2 - The Pragmatic Approach"
             }
           },
           {
@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/ML Basics Questions.md",
+                "file": "car or not.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ML Basics Questions"
+              "title": "car or not"
             }
           },
           {
@@ -95,7 +95,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -238,12 +238,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "551da26836bdfeae",
+  "active": "c7cf514940805ab3",
   "lastOpenFiles": [
+    "Book Club/The Pragmatic Programmer/Chapter 1 - The pragmatic philosophy.md",
+    "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md",
+    "car or not.md",
+    "Interview Prep/ML Basics Questions.md",
     "Interview Prep/ML Interview Questions.md",
     "Interview Prep/Software Questions.md",
-    "Book Club/The Pragmatic Programmer/Chapter 1 - A pragmatic philosophy.md",
-    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",
     "Machine Learning/MIsc/Winsorization.md",
@@ -281,8 +283,6 @@
     "Machine Learning/Hands on ML book/Introduction.md",
     "- Topics/Projects.md",
     "Machine Learning/Google Intro to ML course/What is Machine Learning.md",
-    "Machine Learning/Google Intro to ML course/Supervised Learning.md",
-    "- Topics/labels.md",
     "Screenshots/Screenshot 2025-01-24 at 9.00.51 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png"
