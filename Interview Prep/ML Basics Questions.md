@@ -1051,5 +1051,3 @@ Tokens are essential for language models because they are the smallest units of 
 - Helps **convert text into numerical form** for ML models.  
 - Improves **efficiency** by reducing vocabulary size.  
 - Affects **accuracy**—poor tokenization can harm model performance.
-
-

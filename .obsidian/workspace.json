@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md",
+                "file": "Interview Prep/ML Basics Questions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Chapter 2 - The Pragmatic Approach"
+              "title": "ML Basics Questions"
             }
           },
           {
@@ -240,8 +240,8 @@
   },
   "active": "c7cf514940805ab3",
   "lastOpenFiles": [
-    "Book Club/The Pragmatic Programmer/Chapter 1 - The pragmatic philosophy.md",
     "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md",
+    "Book Club/The Pragmatic Programmer/Chapter 1 - The pragmatic philosophy.md",
     "car or not.md",
     "Interview Prep/ML Basics Questions.md",
     "Interview Prep/ML Interview Questions.md",
