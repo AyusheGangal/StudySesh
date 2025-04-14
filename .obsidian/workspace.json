@@ -15,59 +15,20 @@
               "state": {
                 "file": "Interview Prep/Materials/Experience Summary.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "Experience Summary"
-            }
-          },
-          {
-            "id": "c7cf514940805ab3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/ML Basics Questions.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ML Basics Questions"
-            }
-          },
-          {
-            "id": "551da26836bdfeae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "car or not.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "car or not"
             }
           },
           {
@@ -76,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Machine Learning/Algorithms/Logistic Regression notes.md",
+                "file": "Book Club/The Pragmatic Programmer/Chapter 4.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -91,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Logistic Regression notes"
+              "title": "Chapter 4"
             }
           }
         ],
@@ -238,15 +199,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7cf514940805ab3",
+  "active": "2b7c1b235fcbeaa4",
   "lastOpenFiles": [
+    "Machine Learning/Algorithms/Logistic Regression notes.md",
+    "Book Club/The Pragmatic Programmer/Chapter 4.md",
+    "car or not.md",
+    "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.7 Projections.md",
+    "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
+    "Mathematics/FlexBooks Linear Algebra/0. Linear Algebra FlexBooks.md",
+    "Interview Prep/ML Basics Questions.md",
     "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md",
     "Book Club/The Pragmatic Programmer/Chapter 1 - The pragmatic philosophy.md",
-    "car or not.md",
-    "Interview Prep/ML Basics Questions.md",
     "Interview Prep/ML Interview Questions.md",
     "Interview Prep/Software Questions.md",
-    "Machine Learning/Algorithms/Logistic Regression notes.md",
     "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",
     "Machine Learning/MIsc/Winsorization.md",
     "Resources/ML Engineering.md",
@@ -269,7 +234,6 @@
     "Code",
     "Machine Learning/Algorithms/Gradient Descent notes.md",
     "Machine Learning/Machine Learning- Andrew Ng/Gradient Descent.md",
-    "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
     "Screenshots/Screenshot 2025-02-21 at 7.37.02 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.36.08 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.35.40 PM.png",
@@ -280,9 +244,6 @@
     "Machine Learning/LLM Engineer Handbook/Preface.md",
     "Machine Learning/Algorithms",
     "Resources/Resources to become a FAANG ML Engineer.md",
-    "Machine Learning/Hands on ML book/Introduction.md",
-    "- Topics/Projects.md",
-    "Machine Learning/Google Intro to ML course/What is Machine Learning.md",
     "Screenshots/Screenshot 2025-01-24 at 9.00.51 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
     "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png"
