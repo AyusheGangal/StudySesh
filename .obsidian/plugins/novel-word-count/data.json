@@ -16146,6 +16146,31 @@
         "characterCount": 0,
         "nonWhitespaceCharacterCount": 0
       }
+    },
+    "MCP/Resources/Blog.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 6,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0.02,
+      "characterCount": 81,
+      "nonWhitespaceCharacterCount": 76,
+      "readingTimeInMinutes": 0.022641509433962263,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1748370902896,
+      "modifiedDate": 1748370925110,
+      "sizeInBytes": 81,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
     }
   }
 }
