@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "342e669d0f982869",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Materials/Experience Summary.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Experience Summary"
-            }
-          },
-          {
             "id": "2b7c1b235fcbeaa4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MCP/Resources/Blog.md",
+                "file": "Computational Neuroscience/Coursera U of Washington/Module 1/3.1 Descriptive Model of Receptive Fields.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,11 +28,34 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Blog"
+              "title": "3.1 Descriptive Model of Receptive Fields"
+            }
+          },
+          {
+            "id": "a46484904274d18e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/ML Basics Questions.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "ML Basics Questions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,8 +200,34 @@
   },
   "active": "2b7c1b235fcbeaa4",
   "lastOpenFiles": [
-    "Trouble shooting.md",
+    "Screenshots/Screenshot 2025-06-01 at 1.01.54 PM.png",
+    "Screenshots/Screenshot 2025-06-01 at 12.59.25 PM.png",
+    "Screenshots/Screenshot 2025-06-01 at 12.58.07 PM.png",
+    "Computational Neuroscience/Coursera U of Washington/Module 1/3 Descriptive Models.md",
+    "Computational Neuroscience/Coursera U of Washington/Module 1/3.1 Descriptive Model of Receptive Fields.md",
+    "Screenshots/Screenshot 2025-06-01 at 12.26.15 PM.png",
+    "Screenshots/Screenshot 2025-06-01 at 12.20.20 PM.png",
+    "Computational Neuroscience/Coursera U of Washington/Module 1/Week 1 Lecture Notes.pdf",
+    "Computational Neuroscience/Coursera U of Washington/Module 1/1 Pickle data format.md",
+    "Computational Neuroscience/Coursera U of Washington/Module 1/2 Course Goals.md",
+    "Computational Neuroscience/Coursera U of Washington/Module 1/0 Syllabus.md",
+    "Languages/Python/Functions/using __future__.md",
+    "Computational Neuroscience/Coursera U of Washington/Module 1",
+    "Machine Learning/StatQuest ML/4. Sensitivity and Specificity.md",
+    "Computational Neuroscience/Coursera U of Washington",
+    "Computational Neuroscience",
+    "Machine Learning/StatQuest ML/3. Confusion Matrix.md",
+    "- Topics/Sensitivity.md",
+    "Machine Learning/StatQuest ML/2. Cross Validation.md",
+    "- Topics/tuning.md",
+    "Machine Learning/StatQuest ML/1. Introduction to ML.md",
+    "- Topics/Bias-Variance Tradeoff.md",
+    "- Topics/Training Data.md",
+    "Interview Prep/ML Basics Questions.md",
+    "Machine Learning/StatQuest ML/0. StatQuest ML playlist.md",
+    "Interview Prep/ML Interview Questions.md",
     "MCP/Resources/Blog.md",
+    "Trouble shooting.md",
     "MCP/Resources",
     "MCP",
     "Book Club/The Pragmatic Programmer/Chapter 4.md",
@@ -211,41 +236,15 @@
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.7 Projections.md",
     "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
     "Mathematics/FlexBooks Linear Algebra/0. Linear Algebra FlexBooks.md",
-    "Interview Prep/ML Basics Questions.md",
-    "Book Club/The Pragmatic Programmer/Chapter 2 - The Pragmatic Approach.md",
-    "Book Club/The Pragmatic Programmer/Chapter 1 - The pragmatic philosophy.md",
-    "Interview Prep/ML Interview Questions.md",
-    "Interview Prep/Software Questions.md",
-    "Interview Prep/120-DS-Interview-Questions/Winsorizing the data.md",
-    "Machine Learning/MIsc/Winsorization.md",
-    "Resources/ML Engineering.md",
-    "Interview Prep/Materials/My Cover Letter SDE.md",
-    "Interview Prep/Materials/My Cover Letter DS.md",
-    "Interview Prep/Materials/Experience Summary.md",
-    "Interview Prep/Materials/Cover Letter.md",
     "Interview Prep/Materials",
     "Book Club/The Pragmatic Programmer",
     "Book Club",
-    "Passion Projects/Large Language Models Project/Text Similarity.md",
-    "Machine Learning/Algorithms/Linear Regression.md",
     "Screenshots/Screenshot 2025-02-28 at 9.44.51 PM.png",
     "Machine Learning/Algorithms/logistic_regression.pdf",
-    "Code/Machine Learning/LinearRegression.ipynb",
-    "Code/DSA/placeholder.py",
-    "Code/Machine Learning",
-    "Code/DSA",
-    "Machine Learning/Algorithms/Gradient Descent notes.md",
-    "Machine Learning/Machine Learning- Andrew Ng/Gradient Descent.md",
     "Screenshots/Screenshot 2025-02-21 at 7.37.02 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.36.08 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.35.40 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.21.11 PM.png",
-    "Screenshots/Screenshot 2025-02-21 at 7.18.24 PM.png",
-    "Interview Prep/Top 45 ML interview questions in 2025.md",
-    "Screenshots/Screenshot 2025-02-16 at 10.03.28 PM.png",
-    "Machine Learning/LLM Engineer Handbook/Preface.md",
-    "Screenshots/Screenshot 2025-01-24 at 9.00.51 PM.png",
-    "Screenshots/Screen Shot 2025-01-23 at 23.36.06 PM.png",
-    "Screenshots/Screen Shot 2025-01-23 at 22.57.15 PM.png"
+    "Screenshots/Screenshot 2025-02-21 at 7.18.24 PM.png"
   ]
 }
