@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computational Neuroscience/Coursera U of Washington/Module 1/3.1 Descriptive Model of Receptive Fields.md",
+                "file": "MCP/config file.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "3.1 Descriptive Model of Receptive Fields"
+              "title": "config file"
             }
           },
           {
@@ -53,6 +53,30 @@
               },
               "icon": "lucide-file",
               "title": "ML Basics Questions"
+            }
+          },
+          {
+            "id": "b1c4d66cfc48d4b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "- Topics/referral.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "referral"
             }
           }
         ]
@@ -200,11 +224,14 @@
   },
   "active": "2b7c1b235fcbeaa4",
   "lastOpenFiles": [
+    "Computational Neuroscience/Coursera U of Washington/Module 1/3.1 Descriptive Model of Receptive Fields.md",
+    "MCP/config file.md",
+    "- Topics/referral.md",
+    "Interview Prep/ML Basics Questions.md",
     "Screenshots/Screenshot 2025-06-01 at 1.01.54 PM.png",
     "Screenshots/Screenshot 2025-06-01 at 12.59.25 PM.png",
     "Screenshots/Screenshot 2025-06-01 at 12.58.07 PM.png",
     "Computational Neuroscience/Coursera U of Washington/Module 1/3 Descriptive Models.md",
-    "Computational Neuroscience/Coursera U of Washington/Module 1/3.1 Descriptive Model of Receptive Fields.md",
     "Screenshots/Screenshot 2025-06-01 at 12.26.15 PM.png",
     "Screenshots/Screenshot 2025-06-01 at 12.20.20 PM.png",
     "Computational Neuroscience/Coursera U of Washington/Module 1/Week 1 Lecture Notes.pdf",
@@ -223,7 +250,6 @@
     "Machine Learning/StatQuest ML/1. Introduction to ML.md",
     "- Topics/Bias-Variance Tradeoff.md",
     "- Topics/Training Data.md",
-    "Interview Prep/ML Basics Questions.md",
     "Machine Learning/StatQuest ML/0. StatQuest ML playlist.md",
     "Interview Prep/ML Interview Questions.md",
     "MCP/Resources/Blog.md",
@@ -235,7 +261,6 @@
     "car or not.md",
     "Mathematics/FlexBooks Linear Algebra/1. Vectors and Matrices/1.7 Projections.md",
     "Mathematics/FlexBooks Linear Algebra/2. System of Linear Equations/2.1 Linear Systems of Equations.md",
-    "Mathematics/FlexBooks Linear Algebra/0. Linear Algebra FlexBooks.md",
     "Interview Prep/Materials",
     "Book Club/The Pragmatic Programmer",
     "Book Club",
@@ -244,7 +269,6 @@
     "Screenshots/Screenshot 2025-02-21 at 7.37.02 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.36.08 PM.png",
     "Screenshots/Screenshot 2025-02-21 at 7.35.40 PM.png",
-    "Screenshots/Screenshot 2025-02-21 at 7.21.11 PM.png",
-    "Screenshots/Screenshot 2025-02-21 at 7.18.24 PM.png"
+    "Screenshots/Screenshot 2025-02-21 at 7.21.11 PM.png"
   ]
 }

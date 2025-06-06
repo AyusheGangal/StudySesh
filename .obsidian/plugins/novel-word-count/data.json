@@ -16446,6 +16446,56 @@
         "characterCount": 0,
         "nonWhitespaceCharacterCount": 0
       }
+    },
+    "- Topics/referral.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 13,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0.043333333333333335,
+      "characterCount": 72,
+      "nonWhitespaceCharacterCount": 60,
+      "readingTimeInMinutes": 0.04905660377358491,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1748923379693,
+      "modifiedDate": 1748923394990,
+      "sizeInBytes": 72,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
+    },
+    "MCP/config file.md": {
+      "isCountable": true,
+      "targetNodeType": "file",
+      "noteCount": 1,
+      "wordCount": 82,
+      "wordCountTowardGoal": 0,
+      "wordGoal": null,
+      "pageCount": 0.2733333333333333,
+      "characterCount": 1700,
+      "nonWhitespaceCharacterCount": 1187,
+      "readingTimeInMinutes": 0.30943396226415093,
+      "linkCount": 0,
+      "embedCount": 0,
+      "aliases": null,
+      "createdDate": 1749131575500,
+      "modifiedDate": 1749144133880,
+      "sizeInBytes": 1700,
+      "sessionStart": {
+        "noteCount": 0,
+        "pageCount": 0,
+        "wordCount": 0,
+        "characterCount": 0,
+        "nonWhitespaceCharacterCount": 0
+      }
     }
   }
 }
