@@ -84,3 +84,28 @@ can i package this as wheel and only use only "devtools-ai-mock-mcp-ayushe" in t
 }
 
 ```
+
+```JSON
+{
+  "mcpServers": {
+    "job-posting-mcp": {
+      "command": "python3",
+      "args": [
+        "/Users/ayushe/repos/mcp-learnings/job-posting-mcp/client_server.py"
+      ],
+      "env": {}
+    },
+    "devtools-ai-mock": {
+      "command": "/Users/ayushe/opt/anaconda3/envs/agangal/bin/devtools-ai-mock-mcp-proxy"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/ayushe/repos"
+      ]
+    }
+  }
+}
+```
